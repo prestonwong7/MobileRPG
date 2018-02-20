@@ -9,3 +9,4 @@ print("Test ride")
 
 print("Omae Wa Mou Shindeiru")
 
+print("Hello World")
