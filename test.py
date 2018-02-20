@@ -11,3 +11,5 @@ print("Omae Wa Mou Shindeiru")
 
 print("I am the best at CECS 341")
 
+print("Nerf this")
+
