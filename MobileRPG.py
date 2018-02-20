@@ -5,3 +5,4 @@ print("MOBILE RPG GOGO")
 
 print("Spicy")
 
+print( "NOT SPICY")
