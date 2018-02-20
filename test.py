@@ -13,3 +13,5 @@ print("I am the best at CECS 341")
 
 print("Nerf this")
 
+print("Embrace the Iris")
+
