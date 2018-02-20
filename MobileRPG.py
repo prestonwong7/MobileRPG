@@ -11,8 +11,9 @@ for i in range(0,10):
 
 print("spicyyy")
 
+spicy = 90000000000
+if(spicy > 1):
+    print("Too spicy for me)
 
-
-print( "NOT SPICY")
 print("TEST CHANGE")
 
