@@ -3,5 +3,5 @@
 print("MOBILE RPG GOGO")
 
 
-print("Test ride")
+print("Spicy")
 
