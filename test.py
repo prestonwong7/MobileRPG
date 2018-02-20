@@ -9,4 +9,5 @@ print("Test ride")
 
 print("Omae Wa Mou Shindeiru")
 
-print("Hello World")
+print("I am the best at CECS 341")
+
