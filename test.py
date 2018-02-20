@@ -7,3 +7,5 @@ print("Pull, push, commit!")
 
 print("Test ride")
 
+print("Omae Wa Mou Shindeiru")
+
