@@ -11,9 +11,9 @@ print("Omae Wa Mou Shindeiru")
 
 print("I am the best at CECS 341")
 
-print("Ken likes to eat silkworms")
+print("Ken likes to eat pizza cuz its spicy af")
 
-print("Nerf this")
+print("PEN15")
 
 
 print("Embrace the Iris")
