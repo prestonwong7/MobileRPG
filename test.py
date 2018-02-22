@@ -11,6 +11,8 @@ print("Omae Wa Mou Shindeiru")
 
 print("I am the best at CECS 341")
 
+print("Ken likes to eat silkworms")
+
 print("Nerf this")
 
 
