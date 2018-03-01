@@ -9,7 +9,9 @@ public class PlayerController : MonoBehaviour {
     private bool playerMoving;
     private Vector2 lastMove;
     private int tester;
-    priavet int test2;
+    private int test2;
+    private int test3;
+
 
 	// Use this for initialization
 	void Start () {
