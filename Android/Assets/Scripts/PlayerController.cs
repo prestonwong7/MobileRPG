@@ -8,6 +8,8 @@ public class PlayerController : MonoBehaviour {
     private Animator anim;
     private bool playerMoving;
     private Vector2 lastMove;
+    private int tester;
+    priavet int test2;
 
 	// Use this for initialization
 	void Start () {
