@@ -12,7 +12,7 @@ public class CameraController : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-        DontDestroyOnLoad(transform.gameObject);
+        DontDestroyOnLoad(transform.gameObject); //Doesnt destroy camera when switching scenes
         
         if (!cameraExists)
         {
@@ -21,14 +21,14 @@ public class CameraController : MonoBehaviour {
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // Destroy
         }
 
     }
 
     // Update is called once per frame
     void Update () {
-        targetPos = new Vector3(followTarget.transform.position.x, followTarget.transform.position.y, transform.position.z);
-        transform.position = Vector3.Lerp(transform.position, targetPos, moveSpeed*Time.deltaTime);
+        targetPos = new Vector3(followTarget.transform.position.x, followTarget.transform.position.y, transform.position.z); // Follows player
+        transform.position = Vector3.Lerp(transform.position, targetPos, moveSpeed*Time.deltaTime); // Follows player
 	}
 }

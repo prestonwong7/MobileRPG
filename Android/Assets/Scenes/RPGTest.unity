@@ -1790,7 +1790,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 288165326}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 27.13, y: 5.51, z: 0}
+  m_LocalPosition: {x: 25.55, y: -0.32, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -1862,6 +1862,7 @@ MonoBehaviour:
   moveSpeed: 3
   timeBetweenMove: 3
   timeToMove: 2
+  respawnTime: 0
 --- !u!1 &309059532
 GameObject:
   m_ObjectHideFlags: 0
@@ -2573,6 +2574,7 @@ MonoBehaviour:
   moveSpeed: 3
   timeBetweenMove: 3
   timeToMove: 2
+  respawnTime: 0
 --- !u!58 &401945592
 CircleCollider2D:
   m_ObjectHideFlags: 0
@@ -3850,6 +3852,7 @@ MonoBehaviour:
   moveSpeed: 3
   timeBetweenMove: 3
   timeToMove: 2
+  respawnTime: 0
 --- !u!58 &614278096
 CircleCollider2D:
   m_ObjectHideFlags: 0
