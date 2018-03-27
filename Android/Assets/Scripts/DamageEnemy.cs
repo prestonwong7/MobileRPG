@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class DamageEnemy : MonoBehaviour {
 
+    public int damage;
+    public GameObject damageParticle;
+    public Transform pointOfImpact;
+
 	// Use this for initialization
 	void Start () {
 		
@@ -18,7 +22,8 @@ public class DamageEnemy : MonoBehaviour {
     {
         if (other.gameObject.tag == "Enemy")
         {
-            Destroy(other.gameObject);
+            other.gameObject.GetComponent<EnemyHealthManager>().damageEnemy(damage);
+            Instantiate(damageParticle, pointOfImpact.position, pointOfImpact.rotation);
         }
     }
 
