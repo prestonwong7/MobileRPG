@@ -72,12 +72,12 @@ public class SlimeController : MonoBehaviour {
 
     void OnCollisionEnter2D(Collision2D other) // Used when player hits a slime, or enemy object
     {
-        if (other.gameObject.name == "Player1")
-        {
-            //Destroy(other.gameObject) //KILLS PLAYER but camera wont follow
-            other.gameObject.SetActive(false);
-            reloading = true;
-            thePlayer = other.gameObject;
-        }
+        //if (other.gameObject.name == "Player1")
+        //{
+        //    //Destroy(other.gameObject) //KILLS PLAYER but camera wont follow
+        //    other.gameObject.SetActive(false);
+        //    reloading = true;
+        //    thePlayer = other.gameObject;
+        //}
     }
 }
