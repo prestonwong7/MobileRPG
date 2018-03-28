@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4253040630652720}
   - component: {fileID: 198957472530562194}
   - component: {fileID: 199685194024867024}
+  - component: {fileID: 114550095296217742}
   m_Layer: 0
   m_Name: DamageParticle
   m_TagString: Untagged
@@ -41,6 +42,18 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114550095296217742
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1896007512154378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: db1c23d4cec6b8a47bfddbae70a4e90d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  timeToDestroy: 0.5
 --- !u!198 &198957472530562194
 ParticleSystem:
   m_ObjectHideFlags: 1
