@@ -14,13 +14,14 @@ public class FloatingNumbers : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		
-	}
+        displayNumber.transform.position = new Vector3(transform.position.x, (transform.position.y + (floatSpeed * Time.deltaTime)), transform.position.z);
+    }
 	
 	// Update is called once per frame
 	void Update () {
         displayNumber.text = "" + damageNumber ;
-        displayNumber.transform.position = new Vector3(transform.position.x, (transform.position.y + (floatSpeed * Time.deltaTime)), transform.position.z);
-        
-	}
+        displayNumber.transform.position = new Vector3(displayNumber.transform.position.x, (displayNumber.transform.position.y + (floatSpeed * Time.deltaTime)), displayNumber.transform.position.z);
+       
+
+    }
 }

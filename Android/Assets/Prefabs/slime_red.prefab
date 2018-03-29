@@ -26,6 +26,7 @@ GameObject:
   - component: {fileID: 114628016758801622}
   - component: {fileID: 50129991321752962}
   - component: {fileID: 114658082367799590}
+  - component: {fileID: 114682625971260766}
   m_Layer: 0
   m_Name: slime_red
   m_TagString: Enemy
@@ -137,6 +138,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   damage: 10
+--- !u!114 &114682625971260766
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1411494507891898}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 35c8d3e7968ae654296b432b2cea1461, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  enemyMaxHealth: 30
+  enemyCurrentHealth: 0
+  enemyExp: 10
 --- !u!212 &212746143409085832
 SpriteRenderer:
   m_ObjectHideFlags: 1

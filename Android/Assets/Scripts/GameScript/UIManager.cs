@@ -8,6 +8,11 @@ public class UIManager : MonoBehaviour {
     public Slider healthBar;
     public Text HPText;
     public PlayerHealthManager playerHealth;
+
+    private PlayerStats thePlayerStat;
+    public Text levelText;
+
+
     private static bool UIExists;
 
 	// Use this for initialization
@@ -21,6 +26,8 @@ public class UIManager : MonoBehaviour {
         {
             Destroy(gameObject);
         }
+
+        thePlayerStat = GetComponent<PlayerStats>();
 	}
 	
 	// Update is called once per frame
@@ -28,6 +35,7 @@ public class UIManager : MonoBehaviour {
         healthBar.maxValue = playerHealth.playerMaxHealth;
         healthBar.value = playerHealth.playerCurrentHealth;
         HPText.text = "HP: " + playerHealth.playerCurrentHealth + "/" + playerHealth.playerMaxHealth;
- 
+
+        levelText.text = "LVL: " + thePlayerStat.currentLevel;
 	}
 }
