@@ -156,7 +156,13 @@ Prefab:
       propertyPath: m_Name
       value: slime_red (3)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114658082367799590, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114093653313224448, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2225470
@@ -2009,7 +2015,13 @@ Prefab:
       propertyPath: m_RootOrder
       value: 7
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114658082367799590, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114093653313224448, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &267755389
@@ -2833,7 +2845,13 @@ Prefab:
       propertyPath: m_Name
       value: slime_red (1)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114658082367799590, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114093653313224448, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &392308915
@@ -4899,6 +4917,12 @@ MonoBehaviour:
   currentLevel: 0
   currentExp: 0
   ExpNeededToLevelUp: 00000000140000003200000064000000c8000000f4010000e8030000dc050000d0070000c4090000
+  HPLevels: 3200000032000000370000003c0000004600000055000000640000007800000096000000c8000000
+  attackLevels: 0500000005000000070000000a0000000c0000000f00000014000000190000001e00000023000000
+  defenseLevels: 00000000000000000100000002000000030000000400000005000000060000000700000008000000
+  currentHp: 0
+  currentAttack: 0
+  currentDefense: 0
 --- !u!1 &613861874
 GameObject:
   m_ObjectHideFlags: 0
@@ -11680,7 +11704,13 @@ Prefab:
       propertyPath: m_Name
       value: slime_red (2)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114658082367799590, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114093653313224448, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1263687066
@@ -11872,7 +11902,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 784748689c5862042ae90c77ee21f469, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 15
+  damage: 10
   damageParticle: {fileID: 1896007512154378, guid: 54260b600e18f4f46ada1513ea3e69aa,
     type: 2}
   pointOfImpact: {fileID: 28112748}
@@ -16698,7 +16728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 876a22a3f6cc74d49b248d197817915e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerMaxHealth: 100
+  playerMaxHealth: 50
   playerCurrentHealth: 50
   flashLength: 0.3
 --- !u!60 &1780567702
@@ -16822,7 +16852,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 38c10d9162d8d364aa12b968fae4ac6e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 7
+  moveSpeed: 5
   diagnoalMoveModifier: 0.75
   attackTime: 0.1
   startPoint: 
@@ -17600,7 +17630,13 @@ Prefab:
       propertyPath: m_Name
       value: slime_red (5)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114658082367799590, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114093653313224448, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1897496274
@@ -18337,7 +18373,13 @@ Prefab:
       propertyPath: m_Name
       value: slime_red (6)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114658082367799590, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114093653313224448, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &1938191342
@@ -19916,7 +19958,13 @@ Prefab:
       propertyPath: m_Name
       value: slime_red (4)
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 114658082367799590, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: damage
+      value: 5
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 114093653313224448, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_IsPrefabParent: 0
 --- !u!1 &2064496289

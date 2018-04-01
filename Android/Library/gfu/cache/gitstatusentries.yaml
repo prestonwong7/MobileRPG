@@ -12,24 +12,18 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 5
-  lastUpdatedAtString: 0001-01-01T00:00:00.0000000+00:00
-  initializedAtString: 2018-04-01T01:09:05.3683113-07:00
+  lastUpdatedAtString: 2018-04-01T12:32:52.4670108-07:00
+  initializedAtString: 2018-04-01T12:02:57.2045263-07:00
   entries:
-  - path: Android\Assets\Prefabs\DamageNumbers.prefab
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Assets\Prefabs\DamageNumbers.prefab
-    projectPath: Assets\Prefabs\DamageNumbers.prefab
+  - path: Android\Assets\Animation\PlayerAttackLeft.anim
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Assets\Animation\PlayerAttackLeft.anim
+    projectPath: Assets\Animation\PlayerAttackLeft.anim
     originalPath: 
     status: 3
     staged: 0
-  - path: Android\Assets\Prefabs\slime_red.prefab
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Assets\Prefabs\slime_red.prefab
-    projectPath: Assets\Prefabs\slime_red.prefab
-    originalPath: 
-    status: 3
-    staged: 0
-  - path: Android\Assets\Scenes\GameScenes\RPGTest.unity
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Assets\Scenes\GameScenes\RPGTest.unity
-    projectPath: Assets\Scenes\GameScenes\RPGTest.unity
+  - path: Android\Assets\Scripts\GameScript\DamageEnemy.cs
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Assets\Scripts\GameScript\DamageEnemy.cs
+    projectPath: Assets\Scripts\GameScript\DamageEnemy.cs
     originalPath: 
     status: 3
     staged: 0
@@ -39,15 +33,21 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
-  - path: Android\Assets\Scripts\GameScript\PlayerHealthManager.cs
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Assets\Scripts\GameScript\PlayerHealthManager.cs
-    projectPath: Assets\Scripts\GameScript\PlayerHealthManager.cs
+  - path: Android\Assets\Scripts\GameScript\PlayerStats.cs
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Assets\Scripts\GameScript\PlayerStats.cs
+    projectPath: Assets\Scripts\GameScript\PlayerStats.cs
     originalPath: 
     status: 3
     staged: 0
   - path: Android\Library\CurrentMaximizeLayout.dwlt
     fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Library\CurrentMaximizeLayout.dwlt
     projectPath: Library\CurrentMaximizeLayout.dwlt
+    originalPath: 
+    status: 3
+    staged: 0
+  - path: Android\Library\InspectorExpandedItems.asset
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Library\InspectorExpandedItems.asset
+    projectPath: Library\InspectorExpandedItems.asset
     originalPath: 
     status: 3
     staged: 0
@@ -99,15 +99,21 @@ MonoBehaviour:
     originalPath: 
     status: 3
     staged: 0
+  - path: Android\Library\metadata\78\784748689c5862042ae90c77ee21f469
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Library\metadata\78\784748689c5862042ae90c77ee21f469
+    projectPath: Library\metadata\78\784748689c5862042ae90c77ee21f469
+    originalPath: 
+    status: 3
+    staged: 0
   - path: Android\Library\metadata\85\8571535deacd21b4882ee6d7d07d0d5d
     fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Library\metadata\85\8571535deacd21b4882ee6d7d07d0d5d
     projectPath: Library\metadata\85\8571535deacd21b4882ee6d7d07d0d5d
     originalPath: 
     status: 3
     staged: 0
-  - path: Android\Library\metadata\87\876a22a3f6cc74d49b248d197817915e
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Library\metadata\87\876a22a3f6cc74d49b248d197817915e
-    projectPath: Library\metadata\87\876a22a3f6cc74d49b248d197817915e
+  - path: Android\Library\metadata\98\98945438d2a201a4b837e644f1fcabf7
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Library\metadata\98\98945438d2a201a4b837e644f1fcabf7
+    projectPath: Library\metadata\98\98945438d2a201a4b837e644f1fcabf7
     originalPath: 
     status: 3
     staged: 0
@@ -141,69 +147,69 @@ MonoBehaviour:
     originalPath: 
     status: 1
     staged: 0
-  - path: Android\Temp\UnityTempFile-27c5596ec8b868b44a9d76db5ba5d26a
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-27c5596ec8b868b44a9d76db5ba5d26a
-    projectPath: Temp\UnityTempFile-27c5596ec8b868b44a9d76db5ba5d26a
+  - path: Android\Temp\UnityTempFile-057c0122a7fed2c4580fdef2733d3a1f
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-057c0122a7fed2c4580fdef2733d3a1f
+    projectPath: Temp\UnityTempFile-057c0122a7fed2c4580fdef2733d3a1f
     originalPath: 
     status: 1
     staged: 0
-  - path: Android\Temp\UnityTempFile-3ba471cffdbb84b4785ed30a95dfdab7
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-3ba471cffdbb84b4785ed30a95dfdab7
-    projectPath: Temp\UnityTempFile-3ba471cffdbb84b4785ed30a95dfdab7
+  - path: Android\Temp\UnityTempFile-0b7c5d064508c104f899adbffc10a302
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-0b7c5d064508c104f899adbffc10a302
+    projectPath: Temp\UnityTempFile-0b7c5d064508c104f899adbffc10a302
     originalPath: 
     status: 1
     staged: 0
-  - path: Android\Temp\UnityTempFile-57c48b0c427e71d45a3dd598da430572
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-57c48b0c427e71d45a3dd598da430572
-    projectPath: Temp\UnityTempFile-57c48b0c427e71d45a3dd598da430572
+  - path: Android\Temp\UnityTempFile-0f58a522fd9f4744cadc604c69c8b506
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-0f58a522fd9f4744cadc604c69c8b506
+    projectPath: Temp\UnityTempFile-0f58a522fd9f4744cadc604c69c8b506
     originalPath: 
     status: 1
     staged: 0
-  - path: Android\Temp\UnityTempFile-70105b9c14c6b8945b9704477bc93306
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-70105b9c14c6b8945b9704477bc93306
-    projectPath: Temp\UnityTempFile-70105b9c14c6b8945b9704477bc93306
+  - path: Android\Temp\UnityTempFile-31706782136bc994d9b26fec6901e0cc
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-31706782136bc994d9b26fec6901e0cc
+    projectPath: Temp\UnityTempFile-31706782136bc994d9b26fec6901e0cc
     originalPath: 
     status: 1
     staged: 0
-  - path: Android\Temp\UnityTempFile-7c010b8482674f545ae3b4b8691d7665
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-7c010b8482674f545ae3b4b8691d7665
-    projectPath: Temp\UnityTempFile-7c010b8482674f545ae3b4b8691d7665
+  - path: Android\Temp\UnityTempFile-39bada06649249c4ba4b9e2259171b2d
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-39bada06649249c4ba4b9e2259171b2d
+    projectPath: Temp\UnityTempFile-39bada06649249c4ba4b9e2259171b2d
     originalPath: 
     status: 1
     staged: 0
-  - path: Android\Temp\UnityTempFile-ae0eeaa6555d3ba4c9d3a4ed08cdfbde
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-ae0eeaa6555d3ba4c9d3a4ed08cdfbde
-    projectPath: Temp\UnityTempFile-ae0eeaa6555d3ba4c9d3a4ed08cdfbde
+  - path: Android\Temp\UnityTempFile-3aa1278293a59594eabc947cfeed8723
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-3aa1278293a59594eabc947cfeed8723
+    projectPath: Temp\UnityTempFile-3aa1278293a59594eabc947cfeed8723
     originalPath: 
     status: 1
     staged: 0
-  - path: Android\Temp\UnityTempFile-bef7b1567fe0f274b96577e0e43d09b3
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-bef7b1567fe0f274b96577e0e43d09b3
-    projectPath: Temp\UnityTempFile-bef7b1567fe0f274b96577e0e43d09b3
+  - path: Android\Temp\UnityTempFile-918873959b533c1459c81673524d1f49
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-918873959b533c1459c81673524d1f49
+    projectPath: Temp\UnityTempFile-918873959b533c1459c81673524d1f49
     originalPath: 
     status: 1
     staged: 0
-  - path: Android\Temp\UnityTempFile-c3955fbee758afd449545641b1575792
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-c3955fbee758afd449545641b1575792
-    projectPath: Temp\UnityTempFile-c3955fbee758afd449545641b1575792
+  - path: Android\Temp\UnityTempFile-b72e99ba95ab21b48a1fd2cb59dad630
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-b72e99ba95ab21b48a1fd2cb59dad630
+    projectPath: Temp\UnityTempFile-b72e99ba95ab21b48a1fd2cb59dad630
     originalPath: 
     status: 1
     staged: 0
-  - path: Android\Temp\UnityTempFile-d42089e9060fc19409c506c193308464
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-d42089e9060fc19409c506c193308464
-    projectPath: Temp\UnityTempFile-d42089e9060fc19409c506c193308464
+  - path: Android\Temp\UnityTempFile-c42c261ffbe41e6428306a54c2d72c8d
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-c42c261ffbe41e6428306a54c2d72c8d
+    projectPath: Temp\UnityTempFile-c42c261ffbe41e6428306a54c2d72c8d
     originalPath: 
     status: 1
     staged: 0
-  - path: Android\Temp\UnityTempFile-d5c021c800aa56c478d3a894c5b436ff
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-d5c021c800aa56c478d3a894c5b436ff
-    projectPath: Temp\UnityTempFile-d5c021c800aa56c478d3a894c5b436ff
+  - path: Android\Temp\UnityTempFile-dfb0ba258df6d664ea141fcf99f327a5
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-dfb0ba258df6d664ea141fcf99f327a5
+    projectPath: Temp\UnityTempFile-dfb0ba258df6d664ea141fcf99f327a5
     originalPath: 
     status: 1
     staged: 0
-  - path: Android\Temp\UnityTempFile-da0d48ac9131fc74587a190fd9b733ec
-    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-da0d48ac9131fc74587a190fd9b733ec
-    projectPath: Temp\UnityTempFile-da0d48ac9131fc74587a190fd9b733ec
+  - path: Android\Temp\UnityTempFile-fab83d8673ad2dc45a87e54567d7896e
+    fullPath: C:\Users\slaye\Desktop\MobileRPG\MobileRPG\Android\Temp\UnityTempFile-fab83d8673ad2dc45a87e54567d7896e
+    projectPath: Temp\UnityTempFile-fab83d8673ad2dc45a87e54567d7896e
     originalPath: 
     status: 1
     staged: 0
