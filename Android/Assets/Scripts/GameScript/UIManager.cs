@@ -9,6 +9,11 @@ public class UIManager : MonoBehaviour {
     public Text HPText;
     public PlayerHealthManager playerHealth;
 
+    public Slider expBar;
+    public Text expText;
+    //public PlayerStats playerCurrentExp;
+
+
     private PlayerStats thePlayerStat;
     public Text levelText;
 
@@ -37,5 +42,9 @@ public class UIManager : MonoBehaviour {
         HPText.text = "HP: " + playerHealth.playerCurrentHealth + "/" + playerHealth.playerMaxHealth;
 
         levelText.text = "LVL: " + thePlayerStat.currentLevel;
+
+        expBar.maxValue = thePlayerStat.maxExp;
+        expBar.value = thePlayerStat.currentExp;
+        expText.text = "EXP: " + thePlayerStat.currentExp + "/" + thePlayerStat.maxExp ;
 	}
 }

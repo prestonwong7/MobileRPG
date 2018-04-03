@@ -11,6 +11,8 @@ public class PlayerStats : MonoBehaviour {
     public int currentLevel;
     public int currentExp;
 
+    public int maxExp;
+
     public int[] ExpNeededToLevelUp;
 
     public int[] HPLevels;
@@ -29,6 +31,8 @@ public class PlayerStats : MonoBehaviour {
         currentAttack = attackLevels[1];
         currentDefense = defenseLevels[1];
 
+        maxExp = ExpNeededToLevelUp[1];
+
         thePlayerHealth = FindObjectOfType<PlayerHealthManager>();
     }
 	
@@ -39,6 +43,7 @@ public class PlayerStats : MonoBehaviour {
         {
             //currentLevel++;
             LevelUp();
+            
         }
 	}
 
@@ -50,6 +55,7 @@ public class PlayerStats : MonoBehaviour {
     public void LevelUp()
     {
         currentLevel++;
+        currentExp = 0;
 
         thePlayerHealth.playerMaxHealth = currentHp;
         thePlayerHealth.playerCurrentHealth += currentHp - HPLevels[currentLevel - 1];
@@ -57,5 +63,7 @@ public class PlayerStats : MonoBehaviour {
         currentHp = HPLevels[currentLevel];
         currentAttack = attackLevels[currentLevel];
         currentDefense = defenseLevels[currentLevel];
+
+        maxExp = ExpNeededToLevelUp[currentLevel];
     }
 }
