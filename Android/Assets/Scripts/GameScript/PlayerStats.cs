@@ -60,6 +60,8 @@ public class PlayerStats : MonoBehaviour {
         thePlayerHealth.playerMaxHealth = currentHp;
         thePlayerHealth.playerCurrentHealth += currentHp - HPLevels[currentLevel - 1];
 
+        thePlayerHealth.playerCurrentHealth = HPLevels[currentLevel - 1]; // Make player health back to full hp
+
         currentHp = HPLevels[currentLevel];
         currentAttack = attackLevels[currentLevel];
         currentDefense = defenseLevels[currentLevel];
