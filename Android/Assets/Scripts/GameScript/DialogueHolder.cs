@@ -7,6 +7,8 @@ public class DialogueHolder : MonoBehaviour {
     public string dialogue;
     private DialogueManager dialogueManage;
 
+    public string[] dialogueLines;
+
 	// Use this for initialization
 	void Start () {
         dialogueManage = FindObjectOfType<DialogueManager>();
@@ -28,7 +30,16 @@ public class DialogueHolder : MonoBehaviour {
         {
             if (Input.GetKeyUp(KeyCode.Z))
             {
-                dialogueManage.ShowBox(dialogue);
+                //dialogueManage.ShowBox(dialogue);
+
+                if (!dialogueManage.dialogueActive) // Restart from the first dialogue line
+                {
+                    dialogueManage.dialogueLines = dialogueLines;
+                    dialogueManage.currentLine = 0;
+                    dialogueManage.ShowDialogue();
+                }
+
+
             }
         }
     }

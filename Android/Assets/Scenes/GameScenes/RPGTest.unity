@@ -14285,7 +14285,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialogueBox: {fileID: 1519036517}
   dialogueText: {fileID: 948775833}
-  dialogueActive: 1
+  dialogueActive: 0
+  dialogueLines:
+  - 
+  currentLine: 0
 --- !u!1 &1493606136
 GameObject:
   m_ObjectHideFlags: 0
@@ -17056,6 +17059,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: Hey, how's it going bud.
+  dialogueLines:
+  - Hey there! Welcome to Mobile RPG!
+  - My name's Kirito. What 'bout ypu?
+  - You new here? Well, press Z to attack.
+  - Move using the D-PAD.
 --- !u!61 &1741063096
 BoxCollider2D:
   m_ObjectHideFlags: 0
