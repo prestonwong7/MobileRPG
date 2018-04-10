@@ -12,18 +12,119 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2018-04-09T17:02:10.9118010-07:00
-  initializedAtString: 2018-04-09T17:02:10.9118010-07:00
-  localBranches: []
-  remoteBranches: []
-  remotes: []
+  lastUpdatedAtString: 2018-04-09T17:50:47.8636000-07:00
+  initializedAtString: 2018-04-09T17:50:47.8636000-07:00
+  localBranches:
+  - name: Ken
+    tracking: origin/Ken
+    isActive: 0
+  - name: eli
+    tracking: origin/eli
+    isActive: 0
+  - name: master
+    tracking: origin/master
+    isActive: 0
+  - name: preston
+    tracking: origin/preston
+    isActive: 1
+  remoteBranches:
+  - name: origin/Daniel
+    tracking: '[None]'
+    isActive: 0
+  - name: origin/HEAD
+    tracking: '[None]'
+    isActive: 0
+  - name: origin/Ken
+    tracking: '[None]'
+    isActive: 0
+  - name: origin/eli
+    tracking: '[None]'
+    isActive: 0
+  - name: origin/master
+    tracking: '[None]'
+    isActive: 0
+  - name: origin/peter
+    tracking: '[None]'
+    isActive: 0
+  - name: origin/preston
+    tracking: '[None]'
+    isActive: 0
+  remotes:
+  - name: origin
+    url: https://github.com/prestonwong7/MobileRPG.git
+    login: 
+    user: 
+    host: 
+    function: 0
+    token: 
   localConfigBranches:
-    keys: []
-    values: []
+    keys:
+    - Ken
+    - eli
+    - master
+    - preston
+    values:
+    - name: Ken
+      remote:
+        name: origin
+        url: https://github.com/prestonwong7/MobileRPG.git
+    - name: eli
+      remote:
+        name: origin
+        url: https://github.com/prestonwong7/MobileRPG.git
+    - name: master
+      remote:
+        name: origin
+        url: https://github.com/prestonwong7/MobileRPG.git
+    - name: preston
+      remote:
+        name: origin
+        url: https://github.com/prestonwong7/MobileRPG.git
   remoteConfigBranches:
-    keys: []
-    subKeys: []
-    subKeyValues: []
+    keys:
+    - origin
+    subKeys:
+    - Values:
+      - Daniel
+      - HEAD
+      - Ken
+      - eli
+      - master
+      - peter
+      - preston
+    subKeyValues:
+    - Values:
+      - name: Daniel
+        remote:
+          name: origin
+          url: https://github.com/prestonwong7/MobileRPG.git
+      - name: HEAD
+        remote:
+          name: origin
+          url: https://github.com/prestonwong7/MobileRPG.git
+      - name: Ken
+        remote:
+          name: origin
+          url: https://github.com/prestonwong7/MobileRPG.git
+      - name: eli
+        remote:
+          name: origin
+          url: https://github.com/prestonwong7/MobileRPG.git
+      - name: master
+        remote:
+          name: origin
+          url: https://github.com/prestonwong7/MobileRPG.git
+      - name: peter
+        remote:
+          name: origin
+          url: https://github.com/prestonwong7/MobileRPG.git
+      - name: preston
+        remote:
+          name: origin
+          url: https://github.com/prestonwong7/MobileRPG.git
   configRemotes:
-    keys: []
-    values: []
+    keys:
+    - origin
+    values:
+    - name: origin
+      url: https://github.com/prestonwong7/MobileRPG.git
