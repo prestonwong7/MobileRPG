@@ -22,6 +22,8 @@ public class PlayerController : MonoBehaviour {
 
     public string startPoint;
 
+    public bool canMove;
+
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
@@ -37,12 +39,20 @@ public class PlayerController : MonoBehaviour {
             Destroy(gameObject);
         }
 
+        canMove = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
 
         playerMoving = false;
+
+        if (!canMove)
+        {
+            myRigidBody.velocity = Vector2.zero;
+            return; // No other code will run in this function
+        }
+
         if (!attacking)
         {
             if (Input.GetAxisRaw("Horizontal") > 0.5f || Input.GetAxisRaw("Horizontal") < -0.5f) // Horizontal movement

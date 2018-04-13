@@ -28,11 +28,15 @@ public class VillagerMovement : MonoBehaviour {
     public Vector2 facing;
 
     public Collider2D walkZone;
- 
+
+    public bool canMove;
+    private DialogueManager theDialogueManager;
 
 	// Use this for initialization
 	void Start () {
         myRigidBody = GetComponent<Rigidbody2D>();
+        theDialogueManager = FindObjectOfType<DialogueManager>();
+
         waitCounter = waitTime;
         walkCounter = walkTime;
 
@@ -46,10 +50,24 @@ public class VillagerMovement : MonoBehaviour {
             maxWalkPoint = walkZone.bounds.max; // Gets the max bounds
             hasWalkZone = true;
         }
+
+        canMove = true;
 	}
 	
 	// Update is called once per frame
 	void Update () {
+
+        if (!theDialogueManager.dialogueActive) // If there is no dialouge, villager can move
+        {
+            canMove = true;
+        }
+
+        if (!canMove) // Check
+        {
+            myRigidBody.velocity = Vector2.zero;
+            return; // Stops the rest of the update function from running
+        }
+
 		if (isWalking) // Set when to walk
         {
             walkCounter -= Time.deltaTime;

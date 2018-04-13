@@ -13,9 +13,11 @@ public class DialogueManager : MonoBehaviour {
     public string[] dialogueLines;
     public int currentLine;
 
+    private PlayerController thePlayer;
+
 	// Use this for initialization
 	void Start () {
-		
+        thePlayer = FindObjectOfType<PlayerController>();
 	}
 	
 	// Update is called once per frame
@@ -35,6 +37,7 @@ public class DialogueManager : MonoBehaviour {
             dialogueActive = false;
 
             currentLine = 0; // Reset dialogue to 0 so other NPCs can talk
+            thePlayer.canMove = true; // Player can move after dialogue is set active
         }
 
         dialogueText.text = dialogueLines[currentLine]; // Read the max value currentLine, so it displays something
@@ -46,12 +49,15 @@ public class DialogueManager : MonoBehaviour {
         dialogueActive = true;
         dialogueBox.SetActive(true);
         dialogueText.text = dialogue;
+        
     }
 
     public void ShowDialogue()
     {
         dialogueActive = true;
         dialogueBox.SetActive(true);
-        
+        thePlayer.canMove = false; // Player can't move while dialogue is occuring
+
+
     }
 }
