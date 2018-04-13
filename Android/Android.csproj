@@ -255,6 +255,9 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scripts\GameScript\AudioManager.cs" />
+    <Compile Include="Assets\Scripts\GameScript\AudioTest.cs" />
+    <Compile Include="Assets\Scripts\GameScript\AudioTestCheck.cs" />
     <Compile Include="Assets\Scripts\GameScript\Bounds.cs" />
     <Compile Include="Assets\Scripts\GameScript\CameraController.cs" />
     <Compile Include="Assets\Scripts\GameScript\DamageEnemy.cs" />
@@ -271,6 +274,8 @@
     <Compile Include="Assets\Scripts\GameScript\PlayerStartPoint.cs" />
     <Compile Include="Assets\Scripts\GameScript\PlayerStats.cs" />
     <Compile Include="Assets\Scripts\GameScript\SlimeController.cs" />
+    <Compile Include="Assets\Scripts\GameScript\SwtichAudioTrigger.cs" />
+    <Compile Include="Assets\Scripts\GameScript\SwtichMusicOnLoad.cs" />
     <Compile Include="Assets\Scripts\GameScript\UIManager.cs" />
     <Compile Include="Assets\Scripts\GameScript\VillagerMovement.cs" />
     <Compile Include="Assets\Scripts\MenuScript\ActiveStateToggler.cs" />
