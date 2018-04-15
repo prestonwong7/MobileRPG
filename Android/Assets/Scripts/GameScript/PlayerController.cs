@@ -24,10 +24,13 @@ public class PlayerController : MonoBehaviour {
 
     public bool canMove;
 
+    private SFXManager theSFXManager;
+
 	// Use this for initialization
 	void Start () {
         anim = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
+        theSFXManager = FindObjectOfType<SFXManager>();
 
         if (!playerExists)
         {
@@ -99,6 +102,7 @@ public class PlayerController : MonoBehaviour {
             attacking = true;
             myRigidBody.velocity = Vector2.zero;
             anim.SetBool("Attack", true);
+            theSFXManager.playerAttack.Play(); // Play sound effect
         }
         if (attackTimeCounter > 0)
         {
