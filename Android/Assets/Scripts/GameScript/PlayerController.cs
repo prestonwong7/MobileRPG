@@ -40,6 +40,9 @@ public class PlayerController : MonoBehaviour {
         }
 
         canMove = true;
+
+        lastMove = new Vector2(0, -1f); // Beginning of game, player faces down
+        
 	}
 	
 	// Update is called once per frame

@@ -3199,7 +3199,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &445190795
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3230,9 +3230,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   questNumber: 2
-  theQuestManager: {fileID: 0}
-  startText: 
-  endText: 
+  theQuestManager: {fileID: 1628249851}
+  startText: Go to tent!
+  endText: You reached the tent!
 --- !u!1 &452399858
 GameObject:
   m_ObjectHideFlags: 0
@@ -16236,9 +16236,9 @@ MonoBehaviour:
   quests:
   - {fileID: 2053395983}
   - {fileID: 1863828239}
-  - {fileID: 0}
+  - {fileID: 445190796}
   questCompleted: 
-  theDialogueManager: {fileID: 0}
+  theDialogueManager: {fileID: 1482558082}
 --- !u!1 &1631544815
 GameObject:
   m_ObjectHideFlags: 0
@@ -17053,6 +17053,7 @@ GameObject:
   - component: {fileID: 1741063094}
   - component: {fileID: 1741063096}
   - component: {fileID: 1741063095}
+  - component: {fileID: 1741063097}
   m_Layer: 0
   m_Name: DialogueZone
   m_TagString: Untagged
@@ -17115,6 +17116,20 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1.33, y: 1.39}
   m_EdgeRadius: 0
+--- !u!114 &1741063097
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1741063093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9807f7dd33fa27946a2c8e39976f265a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 2
+  startQuest: 1
+  endQuest: 0
 --- !u!1 &1741667660
 GameObject:
   m_ObjectHideFlags: 0
@@ -18244,7 +18259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1863828238
 RectTransform:
   m_ObjectHideFlags: 0
@@ -20985,7 +21000,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2053395982
 RectTransform:
   m_ObjectHideFlags: 0
