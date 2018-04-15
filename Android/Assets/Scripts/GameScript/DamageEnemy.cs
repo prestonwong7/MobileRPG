@@ -12,11 +12,11 @@ public class DamageEnemy : MonoBehaviour {
 
     private PlayerStats thePlayerStats;
 
-    private FloatingNumbers theFloatingNumber;
+    //private FloatingNumbers theFloatingNumber;
 
 	// Use this for initialization
 	void Start () {
-        theFloatingNumber = GetComponent<FloatingNumbers>();
+        //theFloatingNumber = GetComponent<FloatingNumbers>();
         thePlayerStats = FindObjectOfType<PlayerStats>();
 
 	}

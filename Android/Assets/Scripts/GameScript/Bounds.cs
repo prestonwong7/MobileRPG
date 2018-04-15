@@ -7,12 +7,12 @@ public class Bounds : MonoBehaviour {
     private BoxCollider2D bounds;
     private CameraController theCamera;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start() {
         bounds.GetComponent<BoxCollider2D>();
         theCamera = FindObjectOfType<CameraController>();
         theCamera.SetBounds(bounds);
-	}
+    }
 	
 	// Update is called once per frame
 	void Update () {
@@ -20,3 +20,4 @@ public class Bounds : MonoBehaviour {
 		
 	}
 }
+   
