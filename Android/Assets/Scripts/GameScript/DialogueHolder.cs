@@ -9,16 +9,26 @@ public class DialogueHolder : MonoBehaviour {
 
     public string[] dialogueLines;
 
+    public bool autoPlay;
+
 	// Use this for initialization
 	void Start () {
         dialogueManage = FindObjectOfType<DialogueManager>();
+        
         
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		
-	}
+        if (autoPlay)
+        {
+            autoPlay = false;
+            dialogueManage.dialogueLines = dialogueLines;
+            dialogueManage.currentLine = 0;
+            dialogueManage.ShowDialogue();
+          
+        }
+    }
 
     /*
      * Every moment the player stays inside the box
