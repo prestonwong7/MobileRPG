@@ -349,7 +349,7 @@ GameObject:
   - component: {fileID: 1667690312}
   - component: {fileID: 1667690311}
   m_Layer: 0
-  m_Name: slime_red
+  m_Name: Slime Boss
   m_TagString: Enemy
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -367,10 +367,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35c8d3e7968ae654296b432b2cea1461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMaxHealth: 1000
+  enemyMaxHealth: 30
   enemyCurrentHealth: 0
   enemyExp: 100
   enemyQuestName: 
+  bossFightEndScene: 1
+  sceneNameToSwitch: Ken's Map
+  exitPoint: SlimeBossExit
 --- !u!114 &1667690312
 MonoBehaviour:
   m_ObjectHideFlags: 0
