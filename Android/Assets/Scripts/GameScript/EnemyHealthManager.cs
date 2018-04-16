@@ -9,11 +9,15 @@ public class EnemyHealthManager : MonoBehaviour {
 
     public int enemyExp;
 
+    public string enemyQuestName;
+    private QuestManager theQuestManager;
+
     private PlayerStats thePlayerStats;
 
     // Use this for initialization
     void Start()
     {
+        theQuestManager = FindObjectOfType<QuestManager>();
         enemyCurrentHealth = enemyMaxHealth;
 
         thePlayerStats = FindObjectOfType<PlayerStats>();
@@ -24,6 +28,7 @@ public class EnemyHealthManager : MonoBehaviour {
     {
         if (enemyCurrentHealth <= 0)
         {
+            theQuestManager.enemyKilled = enemyQuestName;
             gameObject.SetActive(false);
 
             thePlayerStats.AddExp(enemyExp);
