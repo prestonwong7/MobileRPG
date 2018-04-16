@@ -32,6 +32,8 @@ public class VillagerMovement : MonoBehaviour {
     public bool canMove;
     private DialogueManager theDialogueManager;
 
+    public bool oneDirection;
+
 	// Use this for initialization
 	void Start () {
         myRigidBody = GetComponent<Rigidbody2D>();
@@ -56,6 +58,11 @@ public class VillagerMovement : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        if (oneDirection)
+        {
+            myRigidBody.velocity = new Vector2(0, -moveSpeed);
+            return;
+        }
 
         if (!theDialogueManager.dialogueActive) // If there is no dialouge, villager can move
         {

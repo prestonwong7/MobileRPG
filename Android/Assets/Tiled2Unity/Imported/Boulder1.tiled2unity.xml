@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <!--Tiled2Unity generated xml data-->
 <!--Do not modify by hand-->
-<!--Last exported: 4/15/2018 8:53:25 PM-->
+<!--Last exported: 4/16/2018 1:08:30 AM-->
 <Tiled2Unity version="1.0.13.2">
   <AssignMaterial mesh="Boulder1_mesh_0001" material="roguelikeSheet_transparent" />
   <AssignMaterial mesh="Boulder1_mesh_0002" material="roguelikeSheet_transparent" />
@@ -16,6 +16,10 @@
     </GameObject>
     <GameObject name="Collision" x="0" y="0" z="0">
       <ObjectLayer offsetX="0" offsetY="0" color="#ff808080" />
+      <GameObject name="RectangleObject" x="50.916687" y="-32.958313" rotation="0" layer="">
+        <RectangleObjectComponent tmx-object-id="36" tmx-object-name="" tmx-object-type="" tmx-object-x="814.667" tmx-object-y="527.333" tmx-object-width="34" tmx-object-height="15.6667" tmx-object-rotation="0" />
+        <BoxCollider2D width="2.125" height="0.9791688" />
+      </GameObject>
       <GameObject name="RectangleObject" x="34.833313" y="-34" rotation="0" layer="">
         <RectangleObjectComponent tmx-object-id="15" tmx-object-name="" tmx-object-type="" tmx-object-x="557.333" tmx-object-y="544" tmx-object-width="257.333" tmx-object-height="30.6667" tmx-object-rotation="0" />
         <BoxCollider2D width="16.083313" height="1.91666877" />

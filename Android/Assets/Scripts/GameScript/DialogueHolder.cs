@@ -20,14 +20,14 @@ public class DialogueHolder : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        if (autoPlay)
-        {
-            autoPlay = false;
-            dialogueManage.dialogueLines = dialogueLines;
-            dialogueManage.currentLine = 0;
-            dialogueManage.ShowDialogue();
+        //if (autoPlay)
+        //{
+        //    autoPlay = false;
+        //    dialogueManage.dialogueLines = dialogueLines;
+        //    dialogueManage.currentLine = 0;
+        //    dialogueManage.ShowDialogue();
           
-        }
+        //}
     }
 
     /*
