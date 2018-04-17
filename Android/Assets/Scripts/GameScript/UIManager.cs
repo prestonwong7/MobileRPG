@@ -9,6 +9,15 @@ public class UIManager : MonoBehaviour {
     public Text HPText;
     public PlayerHealthManager playerHealth;
 
+    public Slider expBar;
+    public Text expText;
+    //public PlayerStats playerCurrentExp;
+
+    //public string questName;
+    //public Text questText;
+    //private QuestObject theQO;
+
+
     private PlayerStats thePlayerStat;
     public Text levelText;
 
@@ -37,5 +46,13 @@ public class UIManager : MonoBehaviour {
         HPText.text = "HP: " + playerHealth.playerCurrentHealth + "/" + playerHealth.playerMaxHealth;
 
         levelText.text = "LVL: " + thePlayerStat.currentLevel;
+
+        expBar.maxValue = thePlayerStat.maxExp;
+        expBar.value = thePlayerStat.currentExp;
+        expText.text = "EXP: " + thePlayerStat.currentExp + "/" + thePlayerStat.maxExp ;
+
+        //if (theQO.isEnemyQuest) {
+        //    questText.text = questName + ": " + theQO.enemyKillCount + "/" + theQO.enemiesToKill;
+        //}
 	}
 }
