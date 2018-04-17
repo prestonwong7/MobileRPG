@@ -14,20 +14,22 @@ public class DialogueHolder : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         dialogueManage = FindObjectOfType<DialogueManager>();
-        
-        
-	}
+        if (autoPlay)
+        {
+            
+            dialogueManage.dialogueLines = dialogueLines;
+            dialogueManage.currentLine = 0;
+            dialogueManage.ShowDialogue();
+            autoPlay = false;
+
+        }
+
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        //if (autoPlay)
-        //{
-        //    autoPlay = false;
-        //    dialogueManage.dialogueLines = dialogueLines;
-        //    dialogueManage.currentLine = 0;
-        //    dialogueManage.ShowDialogue();
-          
-        //}
+       
     }
 
     /*

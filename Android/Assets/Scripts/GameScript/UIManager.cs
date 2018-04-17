@@ -13,6 +13,10 @@ public class UIManager : MonoBehaviour {
     public Text expText;
     //public PlayerStats playerCurrentExp;
 
+    //public string questName;
+    //public Text questText;
+    //private QuestObject theQO;
+
 
     private PlayerStats thePlayerStat;
     public Text levelText;
@@ -46,5 +50,9 @@ public class UIManager : MonoBehaviour {
         expBar.maxValue = thePlayerStat.maxExp;
         expBar.value = thePlayerStat.currentExp;
         expText.text = "EXP: " + thePlayerStat.currentExp + "/" + thePlayerStat.maxExp ;
+
+        //if (theQO.isEnemyQuest) {
+        //    questText.text = questName + ": " + theQO.enemyKillCount + "/" + theQO.enemiesToKill;
+        //}
 	}
 }
