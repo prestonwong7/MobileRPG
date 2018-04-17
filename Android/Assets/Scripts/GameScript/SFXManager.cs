@@ -7,7 +7,9 @@ public class SFXManager : MonoBehaviour {
     public AudioSource playerHurt; // Reference to the audio
     public AudioSource playerDead;
     public AudioSource playerAttack;
+    public AudioSource playerLevelUp;
 
+    
     private static bool sfManExists;
 
 	// Use this for initialization

@@ -24,6 +24,7 @@ public class PlayerStats : MonoBehaviour {
     public int currentDefense;
 
     private PlayerHealthManager thePlayerHealth;
+    private SFXManager theSFX;
 
 	// Use this for initialization
 	void Start () {
@@ -34,6 +35,7 @@ public class PlayerStats : MonoBehaviour {
         maxExp = ExpNeededToLevelUp[1];
 
         thePlayerHealth = FindObjectOfType<PlayerHealthManager>();
+        theSFX = FindObjectOfType<SFXManager>();
     }
 	
 	// Update is called once per frame
@@ -67,5 +69,8 @@ public class PlayerStats : MonoBehaviour {
         currentDefense = defenseLevels[currentLevel];
 
         maxExp = ExpNeededToLevelUp[currentLevel];
+        theSFX.playerLevelUp.Play();
+
+
     }
 }
