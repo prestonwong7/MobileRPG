@@ -20,9 +20,9 @@ public class FixedJoystick : Joystick
         //joyDimension.bounds.size = 5;
         //789/2 - 373 = 
         //145
-        print("X: " + direction.x + ", Y: " + direction.y); //not original
-        print(eventData.position);
-        print("Joystick Pos: " +joystickPosition);
+        //print("X: " + direction.x + ", Y: " + direction.y); //not original
+        //print(eventData.position);
+        //print("Joystick Pos: " +joystickPosition);
         //print("Joystick" + joystickPosition);
         //Vector2 direction = eventData.position - joystickPosition;
         //inputVector = (direction.magnitude > background.sizeDelta.x / 2f) ? direction.normalized : direction / (background.sizeDelta.x / 2f);
