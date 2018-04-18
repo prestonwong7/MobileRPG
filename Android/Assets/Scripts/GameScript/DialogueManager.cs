@@ -44,7 +44,7 @@ public class DialogueManager : MonoBehaviour {
             thePlayer.canMove = true; // Player can move after dialogue is set active
         }
 
-        dialogueText.text = dialogueLines[currentLine]; // Read the max value currentLine, so it displays something
+        //dialogueText.text = dialogueLines[currentLine]; // Read the max value currentLine, so it displays something
 
     }
 

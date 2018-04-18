@@ -608,10 +608,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a720d79570d6eb4f8c28ad6e2ac3191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHurt: {fileID: 1702228370}
-  playerDead: {fileID: 1346804246}
-  playerAttack: {fileID: 253014180}
-  playerLevelUp: {fileID: 1680214524}
+  playerHurt: {fileID: 0}
+  playerDead: {fileID: 0}
+  playerAttack: {fileID: 0}
+  playerLevelUp: {fileID: 0}
 --- !u!4 &610432448
 Transform:
   m_ObjectHideFlags: 0
@@ -629,6 +629,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!224 &622473654 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224393674988824298, guid: ed69c373346c6824594f080c84d6f09c,
+    type: 2}
+  m_PrefabInternal: {fileID: 1814320958}
 --- !u!1001 &1073410477
 Prefab:
   m_ObjectHideFlags: 0
@@ -727,7 +732,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartDirection: {x: 0, y: 0}
-  pointName: HouseEntrance
+  pointName: 
 --- !u!4 &1131769464
 Transform:
   m_ObjectHideFlags: 0
@@ -977,8 +982,8 @@ Transform:
   m_LocalPosition: {x: -92, y: -3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 363354411}
-  m_RootOrder: 5
+  m_Father: {fileID: 622473654}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1541704240
 Prefab:
@@ -1094,8 +1099,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6189d3d78a87c864b93d0db70d951d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadArea: GameStart
-  exitPoint: LeaveHouse
+  loadArea: 
+  exitPoint: 
 --- !u!4 &1582778102
 Transform:
   m_ObjectHideFlags: 0
@@ -1421,12 +1426,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   dialogue: 
-  dialogueLines:
-  - One day, a prince woke up from his deep sleep.
-  - '"Well, time to get going to my adventure!"'
-  - Birds were chirping, the sun was rising.
-  - What is there to worry about?
-  - Surely, there was nothing wrong.
+  dialogueLines: []
 --- !u!4 &1783491480
 Transform:
   m_ObjectHideFlags: 0
@@ -1650,12 +1650,12 @@ Prefab:
     - target: {fileID: 224152605511198098, guid: ed69c373346c6824594f080c84d6f09c,
         type: 2}
       propertyPath: m_AnchoredPosition.x
-      value: 256
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224152605511198098, guid: ed69c373346c6824594f080c84d6f09c,
         type: 2}
       propertyPath: m_AnchoredPosition.y
-      value: 256
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224371820235670448, guid: ed69c373346c6824594f080c84d6f09c,
         type: 2}
@@ -1670,22 +1670,22 @@ Prefab:
     - target: {fileID: 224152605511198098, guid: ed69c373346c6824594f080c84d6f09c,
         type: 2}
       propertyPath: m_AnchorMin.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224152605511198098, guid: ed69c373346c6824594f080c84d6f09c,
         type: 2}
       propertyPath: m_AnchorMin.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224152605511198098, guid: ed69c373346c6824594f080c84d6f09c,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 224152605511198098, guid: ed69c373346c6824594f080c84d6f09c,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 0.5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ed69c373346c6824594f080c84d6f09c, type: 2}
