@@ -14,15 +14,19 @@ public class DialogueManager : MonoBehaviour {
     public int currentLine;
 
     private PlayerController thePlayer;
+    //private Joystick joystick;
+    private JoyButton joybutton;
 
 	// Use this for initialization
 	void Start () {
         thePlayer = FindObjectOfType<PlayerController>();
-	}
+        //joystick = FindObjectOfType<Joystick>();
+        joybutton = FindObjectOfType<JoyButton>();
+    }
 	
 	// Update is called once per frame
 	void Update () {
-        if (dialogueActive && Input.GetKeyDown(KeyCode.Space))
+        if (dialogueActive && (Input.GetKeyDown(KeyCode.Space) || joybutton.pressed ))
         {
             //dialogueBox.SetActive(false);
             //dialogueActive = false;

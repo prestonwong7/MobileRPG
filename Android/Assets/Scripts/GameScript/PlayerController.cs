@@ -180,8 +180,8 @@ public class PlayerController : MonoBehaviour {
         }
 
 
-        anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal")); // Used for animating
-        anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical")); // Comment this line and the previous line for joystick animation
+        //anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal")); // Used for animating
+        //anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical")); // Comment this line and the previous line for joystick animation
         anim.SetBool("PlayerMoving", playerMoving);
         anim.SetFloat("LastMoveX", lastMove.x); // LastMove used for direction of player facing
         anim.SetFloat("LastMoveY", lastMove.y);
