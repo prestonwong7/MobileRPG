@@ -550,7 +550,6 @@ MonoBehaviour:
   - '"Well, let''s get going!"'
   - Use the arrows to move any direction.
   - Press 'Z' to attack.
-  autoPlay: 0
 --- !u!224 &131108375
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1042,6 +1041,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 2
   theQuestManager: {fileID: 445918483}
+  questName: 
+  questText: {fileID: 0}
   startText: Go to tent!
   endText: You reached the tent!
   isEnemyQuest: 0
@@ -1078,6 +1079,7 @@ MonoBehaviour:
   playerHurt: {fileID: 647793295}
   playerDead: {fileID: 20445393}
   playerAttack: {fileID: 1571614148}
+  playerLevelUp: {fileID: 0}
 --- !u!4 &694601676
 Transform:
   m_ObjectHideFlags: 0
@@ -1513,6 +1515,11 @@ Prefab:
       propertyPath: m_Volume
       value: 0.661
       objectReference: {fileID: 0}
+    - target: {fileID: 82062440037946652, guid: 6e218fe157ec44a89adfc1c552246582,
+        type: 2}
+      propertyPath: spreadCustomCurve.m_RotationOrder
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e218fe157ec44a89adfc1c552246582, type: 2}
   m_IsPrefabParent: 0
@@ -1611,6 +1618,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 0
   theQuestManager: {fileID: 445918483}
+  questName: 
+  questText: {fileID: 0}
   startText: 
   endText: 
   isEnemyQuest: 0
@@ -2053,6 +2062,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   questNumber: 1
   theQuestManager: {fileID: 445918483}
+  questName: 
+  questText: {fileID: 0}
   startText: Kill 3 Red Slimes!
   endText: Good job, you killed the red slimes.
   isEnemyQuest: 1
@@ -2215,7 +2226,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   StartDirection: {x: 0, y: 0}
-  pointName: 
+  pointName: LeaveHouse
 --- !u!4 &1962272142
 Transform:
   m_ObjectHideFlags: 0

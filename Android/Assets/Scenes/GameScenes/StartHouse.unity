@@ -608,10 +608,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0a720d79570d6eb4f8c28ad6e2ac3191, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerHurt: {fileID: 0}
-  playerDead: {fileID: 0}
-  playerAttack: {fileID: 0}
-  playerLevelUp: {fileID: 0}
+  playerHurt: {fileID: 1702228370}
+  playerDead: {fileID: 1346804246}
+  playerAttack: {fileID: 253014180}
+  playerLevelUp: {fileID: 1680214524}
 --- !u!4 &610432448
 Transform:
   m_ObjectHideFlags: 0
@@ -1099,8 +1099,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6189d3d78a87c864b93d0db70d951d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadArea: 
-  exitPoint: 
+  loadArea: GameStart
+  exitPoint: LeaveHouse
 --- !u!4 &1582778102
 Transform:
   m_ObjectHideFlags: 0
@@ -1585,12 +1585,12 @@ Prefab:
     - target: {fileID: 224371820235670448, guid: ed69c373346c6824594f080c84d6f09c,
         type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.25
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 224371820235670448, guid: ed69c373346c6824594f080c84d6f09c,
         type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.25
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 224371820235670448, guid: ed69c373346c6824594f080c84d6f09c,
         type: 2}
@@ -1640,7 +1640,7 @@ Prefab:
     - target: {fileID: 114499312345778262, guid: ed69c373346c6824594f080c84d6f09c,
         type: 2}
       propertyPath: handleLimit
-      value: 0.83
+      value: 0.77
       objectReference: {fileID: 0}
     - target: {fileID: 114800162575140574, guid: ed69c373346c6824594f080c84d6f09c,
         type: 2}

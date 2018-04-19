@@ -106,7 +106,7 @@ public class PlayerController : MonoBehaviour {
             }
 
             // FOR JOYSTICKS
-            if (joystick.Horizontal > 0.5f)
+            if (joystick.Horizontal > 0.2f)
             {
                 //myRigidBody.velocity = new Vector2(1 * currentMoveSpeed, myRigidBody.velocity.y);
                 transform.Translate(new Vector3(currentMoveSpeed * Time.deltaTime, 0f, 0f));
@@ -117,7 +117,7 @@ public class PlayerController : MonoBehaviour {
                 anim.SetFloat("MoveX", 0);
             }
 
-            if (joystick.Horizontal < -0.5f)
+            if (joystick.Horizontal < -0.2f)
             {
                 //myRigidBody.velocity = new Vector2(1 * currentMoveSpeed, myRigidBody.velocity.y);
                 transform.Translate(new Vector3(-currentMoveSpeed * Time.deltaTime, 0f, 0f));
@@ -128,7 +128,7 @@ public class PlayerController : MonoBehaviour {
                 
             }
 
-            if (joystick.Vertical > 0.5f)
+            if (joystick.Vertical > 0.2f)
             {
                 //myRigidBody.velocity = new Vector2(1 * currentMoveSpeed, myRigidBody.velocity.y);
                 transform.Translate(new Vector3(0f, currentMoveSpeed * Time.deltaTime, 0f));
@@ -141,7 +141,7 @@ public class PlayerController : MonoBehaviour {
                 anim.SetFloat("MoveY", 0f);
             }
 
-            if (joystick.Vertical < -0.5f)
+            if (joystick.Vertical < -0.2f)
             {
                 //myRigidBody.velocity = new Vector2(1 * currentMoveSpeed, myRigidBody.velocity.y);
                 transform.Translate(new Vector3(0f, -currentMoveSpeed * Time.deltaTime , 0f));
