@@ -7,6 +7,7 @@ public class DialogueHolder : MonoBehaviour
 
     public string dialogue;
     private DialogueManager dialogueManage;
+    private JoyButton joybutton;
 
     public string[] dialogueLines;
 
@@ -16,6 +17,7 @@ public class DialogueHolder : MonoBehaviour
     void Start()
     {
         dialogueManage = FindObjectOfType<DialogueManager>();
+        joybutton = FindObjectOfType<JoyButton>();
         
 
 
@@ -43,7 +45,7 @@ public class DialogueHolder : MonoBehaviour
     {
         if (other.gameObject.name == "Player1")
         {
-            if (Input.GetKeyUp(KeyCode.Z))
+            if (Input.GetKeyUp(KeyCode.Z) ) // joybutton.pressed
             {
                 //dialogueManage.ShowBox(dialogue);
 
