@@ -2,7 +2,8 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerController : MonoBehaviour {
+public class PlayerController : MonoBehaviour
+{
 
     public float moveSpeed;
     private float currentMoveSpeed;
@@ -20,20 +21,32 @@ public class PlayerController : MonoBehaviour {
     public float attackTime;
     private float attackTimeCounter;
 
+
+    public bool dead;
+    public bool deadCheck;
+    public float respawnTime;
+    public float respawnTimeCounter;
+
     public string startPoint;
 
     public bool canMove;
+
+    private PlayerHealthManager thePHM;
+    private PlayerStartPoint thePSP;
 
     private SFXManager theSFXManager;
 
     private Joystick joystick;
     private JoyButton joybutton;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start()
+    {
         anim = GetComponent<Animator>();
         myRigidBody = GetComponent<Rigidbody2D>();
         theSFXManager = FindObjectOfType<SFXManager>();
+        thePHM = FindObjectOfType<PlayerHealthManager>();
+        thePSP = FindObjectOfType<PlayerStartPoint>();
         joystick = FindObjectOfType<Joystick>();
         joybutton = FindObjectOfType<JoyButton>();
 
@@ -50,11 +63,12 @@ public class PlayerController : MonoBehaviour {
         canMove = true;
 
         lastMove = new Vector2(0, -1f); // Beginning of game, player faces down
-        
-	}
-	
-	// Update is called once per frame
-	void Update () {
+
+    }
+
+    // Update is called once per frame
+    void Update()
+    {
 
         playerMoving = false;
 
@@ -70,11 +84,11 @@ public class PlayerController : MonoBehaviour {
             {
                 //transform.Translate(new Vector3(Input.GetAxisRaw("Horizontal") * moveSpeed * Time.deltaTime, 0f, 0f));
                 myRigidBody.velocity = new Vector2(Input.GetAxisRaw("Horizontal") * currentMoveSpeed, myRigidBody.velocity.y);
-                
+
                 playerMoving = true;
                 lastMove = new Vector2(Input.GetAxisRaw("Horizontal"), 0f); // Gets last move for animation
             }
-           
+
             if (Input.GetAxisRaw("Vertical") > 0.5f || Input.GetAxisRaw("Vertical") < -0.5f) // Vertical movement
             {
                 //transform.Translate(new Vector3(0f, Input.GetAxisRaw("Vertical") * moveSpeed * Time.deltaTime, 0f));
@@ -92,9 +106,9 @@ public class PlayerController : MonoBehaviour {
             if (Input.GetAxisRaw("Vertical") < 0.5f && Input.GetAxisRaw("Vertical") > -0.5f) // Basically at 0
             {
                 myRigidBody.velocity = new Vector2(myRigidBody.velocity.x, 0f); // MOve speed vertically
-                
+
             }
-           
+
             if (Mathf.Abs(Input.GetAxisRaw("Horizontal")) > 0.5f && Mathf.Abs(Input.GetAxisRaw("Vertical")) > 0.5f) // Moving diagonally
             {
                 currentMoveSpeed = moveSpeed * diagnoalMoveModifier;
@@ -112,7 +126,9 @@ public class PlayerController : MonoBehaviour {
                 playerMoving = true;
                 anim.SetFloat("MoveX", 1f);
                 lastMove = new Vector2(1f, 0f); // Gets last move for animation
-            } else {
+            }
+            else
+            {
                 anim.SetFloat("MoveX", 0);
             }
 
@@ -123,8 +139,10 @@ public class PlayerController : MonoBehaviour {
                 playerMoving = true;
                 anim.SetFloat("MoveX", -1f);
                 lastMove = new Vector2(-1f, 0f); // Gets last move for animation
-            }  else {
-                
+            }
+            else
+            {
+
             }
 
             if (joystick.Vertical > 0.2f)
@@ -143,14 +161,16 @@ public class PlayerController : MonoBehaviour {
             if (joystick.Vertical < -0.2f)
             {
                 //myRigidBody.velocity = new Vector2(1 * currentMoveSpeed, myRigidBody.velocity.y);
-                transform.Translate(new Vector3(0f, -currentMoveSpeed * Time.deltaTime , 0f));
+                transform.Translate(new Vector3(0f, -currentMoveSpeed * Time.deltaTime, 0f));
                 playerMoving = true;
                 anim.SetFloat("MoveY", -1f);
                 lastMove = new Vector2(0f, -1f); // Gets last move for animation
-            } else {
-                
             }
-            if (Mathf.Abs(joystick.Horizontal)> 0.5f && Mathf.Abs(joystick.Vertical) > 0.5f) // Moving diagonally
+            else
+            {
+
+            }
+            if (Mathf.Abs(joystick.Horizontal) > 0.5f && Mathf.Abs(joystick.Vertical) > 0.5f) // Moving diagonally
             {
                 currentMoveSpeed = moveSpeed * diagnoalMoveModifier;
             }
@@ -170,7 +190,7 @@ public class PlayerController : MonoBehaviour {
         if (attackTimeCounter > 0)
         {
             attackTimeCounter -= Time.deltaTime;
-            
+
         }
         if (attackTimeCounter <= 0)
         {
@@ -179,12 +199,46 @@ public class PlayerController : MonoBehaviour {
         }
 
 
+    
+
+
         //anim.SetFloat("MoveX", Input.GetAxisRaw("Horizontal")); // Used for animating
         //anim.SetFloat("MoveY", Input.GetAxisRaw("Vertical")); // Comment this line and the previous line for joystick animation
         anim.SetBool("PlayerMoving", playerMoving);
         anim.SetFloat("LastMoveX", lastMove.x); // LastMove used for direction of player facing
         anim.SetFloat("LastMoveY", lastMove.y);
 
+
+        // Respawning
+
+        if (!dead)
+        {
+            if (thePHM.playerCurrentHealth <= 0)
+            {
+                //deadCheck = true;
+                dead = true;
+                //gameObject.SetActive(false);
+                respawnTimeCounter = respawnTime;
+
+            }
+        }
+
+        if (dead)
+        {
+            if (respawnTimeCounter > 0)
+            {
+                respawnTimeCounter -= Time.deltaTime;
+            }
+
+
+            if (respawnTimeCounter <= 0)
+            {
+                gameObject.SetActive(true);
+                transform.position = thePSP.transform.position;
+                dead = false;
+                thePHM.playerCurrentHealth = thePHM.playerMaxHealth;
+            }
+        }
 
     }
 }
