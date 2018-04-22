@@ -14,7 +14,6 @@ public class FixedJoystick : Joystick
     void Start()
     {
         joystickPosition = RectTransformUtility.WorldToScreenPoint(cam, background.position);
-      
     }
 
     public override void OnDrag(PointerEventData eventData)
