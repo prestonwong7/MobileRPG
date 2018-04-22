@@ -24,7 +24,6 @@ public class PlayerController : MonoBehaviour {
 
     public bool canMove;
 
-
     private SFXManager theSFXManager;
 
     private Joystick joystick;

@@ -4,15 +4,17 @@ using UnityEngine.EventSystems;
 public class FixedJoystick : Joystick
 {
     [Header("Fixed Joystick")]
-    
 
+    RectTransform rectTransform;
     Vector2 joystickPosition = Vector2.zero;
     Vector2 direction = Vector2.zero;
     private Camera cam = new Camera();
 
+
     void Start()
     {
         joystickPosition = RectTransformUtility.WorldToScreenPoint(cam, background.position);
+      
     }
 
     public override void OnDrag(PointerEventData eventData)

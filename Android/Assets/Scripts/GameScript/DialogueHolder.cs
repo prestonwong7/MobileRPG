@@ -45,11 +45,11 @@ public class DialogueHolder : MonoBehaviour
     {
         if (other.gameObject.name == "Player1")
         {
-            if (Input.GetKeyUp(KeyCode.Z) ) // joybutton.pressed
-            {
+            //if (Input.GetKeyUp(KeyCode.Z) ) // joybutton.pressed
+            //{
                 //dialogueManage.ShowBox(dialogue);
-
-                if (!dialogueManage.dialogueActive) // Restart from the first dialogue line
+                // If dialogue is open, do not open dialogue again right after closing
+                if (!dialogueManage.dialogueActive && joybutton.pressed) // Restart from the first dialogue line
                 {
                     dialogueManage.dialogueLines = dialogueLines;
                     dialogueManage.currentLine = 0;
@@ -62,7 +62,7 @@ public class DialogueHolder : MonoBehaviour
                 }
 
 
-            }
+            //}
         }
     }
 }
