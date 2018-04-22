@@ -14,15 +14,15 @@ public class SFXManager : MonoBehaviour {
 
 	// Use this for initialization
 	void Start () {
-		if (!sfManExists)
-        {
-            sfManExists = true;
+		//if (!sfManExists)
+        //{
+            //sfManExists = true;
             DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
+        //}
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
 	}
 	
 	// Update is called once per frame

@@ -23,8 +23,16 @@ public class PlayerStats : MonoBehaviour {
     public int currentAttack;
     public int currentDefense;
 
+    public bool dead;
+    public float respawnTime;
+    public float respawnTimeCounter;
+    public string respawnPoint;
+
     private PlayerHealthManager thePlayerHealth;
+    private PlayerController thePC;
     private SFXManager theSFX;
+    private PlayerStartPoint thePSP;
+    
 
 	// Use this for initialization
 	void Start () {
@@ -36,6 +44,8 @@ public class PlayerStats : MonoBehaviour {
 
         thePlayerHealth = FindObjectOfType<PlayerHealthManager>();
         theSFX = FindObjectOfType<SFXManager>();
+        thePSP = FindObjectOfType<PlayerStartPoint>();
+        thePC = FindObjectOfType<PlayerController>();
     }
 	
 	// Update is called once per frame
@@ -47,7 +57,43 @@ public class PlayerStats : MonoBehaviour {
             LevelUp();
             
         }
-	}
+
+        // Respawning
+
+        if (!dead)
+        {
+            if (thePlayerHealth.playerCurrentHealth <= 0)
+            {
+                //deadCheck = true;
+                dead = true;
+                respawnTimeCounter = respawnTime;
+
+                //Destroy(gameObject);
+
+            }
+        }
+
+        if (dead)
+        {
+            if (respawnTimeCounter > 0)
+            {
+                respawnTimeCounter -= Time.deltaTime;
+            }
+
+
+            if (respawnTimeCounter <= 0)
+            {
+                thePC.gameObject.SetActive(true);
+                //thePC.transform.position = thePSP.transform.position;
+                dead = false;
+                thePlayerHealth.playerCurrentHealth = thePlayerHealth.playerMaxHealth;
+                thePC.transform.position = Vector2.zero;
+            }
+        }
+       
+
+
+    }
 
     public void AddExp(int expToAdd)
     {

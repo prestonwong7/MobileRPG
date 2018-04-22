@@ -18,7 +18,7 @@ public class DialogueHolder : MonoBehaviour
     {
         dialogueManage = FindObjectOfType<DialogueManager>();
         joybutton = FindObjectOfType<JoyButton>();
-        
+
 
 
     }
@@ -33,7 +33,7 @@ public class DialogueHolder : MonoBehaviour
             dialogueManage.currentLine = 0;
             dialogueManage.ShowDialogue();
             autoPlay = false;
-    
+
         }
     }
 
@@ -45,24 +45,24 @@ public class DialogueHolder : MonoBehaviour
     {
         if (other.gameObject.name == "Player1")
         {
-            //if (Input.GetKeyUp(KeyCode.Z) ) // joybutton.pressed
-            //{
-                //dialogueManage.ShowBox(dialogue);
-                // If dialogue is open, do not open dialogue again right after closing
-                if (!dialogueManage.dialogueActive && joybutton.pressed) // Restart from the first dialogue line
+            if (Input.GetKeyUp(KeyCode.Z) || joybutton.pressed) // joybutton.pressed
+                                           //{
+                                           //dialogueManage.ShowBox(dialogue);
+                                           // If dialogue is open, do not open dialogue again right after closing
+                if (!dialogueManage.dialogueActive ) // Restart from the first dialogue line
                 {
                     dialogueManage.dialogueLines = dialogueLines;
                     dialogueManage.currentLine = 0;
                     dialogueManage.ShowDialogue();
                 }
 
-                if (transform.parent.GetComponent<VillagerMovement>() != null) // if the villager even has a villagermovement script
-                {
-                    transform.parent.GetComponent<VillagerMovement>().canMove = false;
-                }
+            if (transform.parent.GetComponent<VillagerMovement>() != null) // if the villager even has a villagermovement script
+            {
+                transform.parent.GetComponent<VillagerMovement>().canMove = false;
+            }
 
 
-            //}
         }
     }
 }
+

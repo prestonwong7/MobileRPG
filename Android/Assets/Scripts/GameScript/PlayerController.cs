@@ -209,36 +209,7 @@ public class PlayerController : MonoBehaviour
         anim.SetFloat("LastMoveY", lastMove.y);
 
 
-        // Respawning
-
-        if (!dead)
-        {
-            if (thePHM.playerCurrentHealth <= 0)
-            {
-                //deadCheck = true;
-                dead = true;
-                //gameObject.SetActive(false);
-                respawnTimeCounter = respawnTime;
-
-            }
-        }
-
-        if (dead)
-        {
-            if (respawnTimeCounter > 0)
-            {
-                respawnTimeCounter -= Time.deltaTime;
-            }
-
-
-            if (respawnTimeCounter <= 0)
-            {
-                gameObject.SetActive(true);
-                transform.position = thePSP.transform.position;
-                dead = false;
-                thePHM.playerCurrentHealth = thePHM.playerMaxHealth;
-            }
-        }
+        
 
     }
 }

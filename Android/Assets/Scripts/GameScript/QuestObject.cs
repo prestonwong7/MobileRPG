@@ -66,6 +66,6 @@ public class QuestObject : MonoBehaviour
     {
         theQuestManager.ShowQuestText(endText);
         theQuestManager.questCompleted[questNumber] = true;
-        gameObject.SetActive(false);
+        
     }
 }
