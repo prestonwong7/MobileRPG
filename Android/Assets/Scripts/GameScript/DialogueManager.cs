@@ -35,16 +35,19 @@ public class DialogueManager : MonoBehaviour {
             currentLine++;
         }
 
-        if (currentLine >= dialogueLines.Length)
+        if (currentLine >= dialogueLines.Length )
         {
             dialogueBox.SetActive(false);
             dialogueActive = false;
 
             currentLine = 0; // Reset dialogue to 0 so other NPCs can talk
-            thePlayer.canMove = true; // Player can move after dialogue is set active
+            if (currentLine >= dialogueLines.Length - 1)
+            {
+                thePlayer.canMove = true; // Player can move after dialogue is set active
+            }
         }
 
-        //dialogueText.text = dialogueLines[currentLine]; // Read the max value currentLine, so it displays something
+        dialogueText.text = dialogueLines[currentLine]; // Read the max value currentLine, so it displays something
 
     }
 
