@@ -15,7 +15,8 @@ public class PlayerStartPoint : MonoBehaviour {
 	void Start () {
 
         thePlayer = FindObjectOfType<PlayerController>();
-
+        
+        
         if (thePlayer.startPoint == pointName)
         {
             
@@ -25,6 +26,7 @@ public class PlayerStartPoint : MonoBehaviour {
             theCamera = FindObjectOfType<CameraController>();
             theCamera.transform.position = new Vector3(transform.position.x, transform.position.y, theCamera.transform.position.z);
         }
+        
 	}
 	
 	// Update is called once per frame

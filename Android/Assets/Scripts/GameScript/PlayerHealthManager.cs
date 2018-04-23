@@ -13,6 +13,11 @@ public class PlayerHealthManager : MonoBehaviour {
 
     private SFXManager theSFXManager;
     private SpriteRenderer playerSprite;
+    private PlayerStartPoint thePSP;
+
+    public bool dead;
+    public float respawnTime;
+    public float respawnTimeCounter;
 
 	// Use this for initialization
 	void Start () {
@@ -30,6 +35,7 @@ public class PlayerHealthManager : MonoBehaviour {
             gameObject.SetActive(false);
         }
 
+       
         if (flashActive)
         {
             if (flashCounter > (flashLength * .6))

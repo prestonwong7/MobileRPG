@@ -36,6 +36,7 @@ public class QuestTrigger : MonoBehaviour {
                 if (endQuest == true && theQuestManager.quests[questNumber].gameObject.activeSelf)
                 {
                     theQuestManager.quests[questNumber].EndQuest(); // Don't need setActive(false) because it is already in questObject
+                    theQuestManager.quests[questNumber].gameObject.SetActive(false);
                 }
             }
         }
