@@ -26,29 +26,33 @@ public class DialogueManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+        //print("Dialogue active: " + dialogueActive);
         if (dialogueActive && (Input.GetKeyDown(KeyCode.Space) || joybutton.pressed ))
         {
             //dialogueBox.SetActive(false);
             //dialogueActive = false;
-
-
+            //print("Dialogue active: " + dialogueActive);
+            //print("Joybutton Status: " + joybutton.pressed);
+            //print("Current Line: " + currentLine);
+            //print("Total Lines: " + dialogueLines.Length);
+            //print("Length: " + dialogueLines.Length);
             currentLine++;
+            joybutton.pressed = false; // Can't hold button down
         }
 
-        if (currentLine >= dialogueLines.Length )
+        if (currentLine >= dialogueLines.Length - 1 )
         {
             dialogueBox.SetActive(false);
             dialogueActive = false;
 
+            //print("Current Line: " + currentLine);
             currentLine = 0; // Reset dialogue to 0 so other NPCs can talk
-            if (currentLine >= dialogueLines.Length - 1)
-            {
-                thePlayer.canMove = true; // Player can move after dialogue is set active
-            }
+
+            thePlayer.canMove = true;
+            //joybutton.pressed = false; // Used so that you can't hold button down!
         }
 
         dialogueText.text = dialogueLines[currentLine]; // Read the max value currentLine, so it displays something
-
     }
 
     public void ShowBox(string dialogue)
@@ -60,7 +64,7 @@ public class DialogueManager : MonoBehaviour {
     }
 
     public void ShowDialogue()
-    {
+    {   
         dialogueActive = true;
         dialogueBox.SetActive(true);
         thePlayer.canMove = false; // Player can't move while dialogue is occuring

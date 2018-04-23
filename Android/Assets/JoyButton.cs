@@ -10,12 +10,14 @@ public class JoyButton : MonoBehaviour, IPointerUpHandler, IPointerDownHandler {
 
     public void OnPointerUp(PointerEventData eventData)
     {
-        pressed = false; 
+        pressed = false;
+        //Input.GetKeyUp(pressed);
     }
 
     public void OnPointerDown(PointerEventData eventData)
     {
         pressed = true;
+        
     }
 
     // Use this for initialization

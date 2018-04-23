@@ -171,9 +171,10 @@ MonoBehaviour:
   - '"What a long nap! I should head back to the kingdom to see how my dad is doing!"'
   - '"I hope he''s doing okay!"'
   - '"Enough talk, let''s get moving!"'
+  - '***Blank***'
   activateOnStartScene: 0
   triggerOnce: 1
-  canMoveInDialogue: 1
+  canMoveInDialogue: 0
 --- !u!4 &140840343
 Transform:
   m_ObjectHideFlags: 0
@@ -1847,6 +1848,7 @@ MonoBehaviour:
   - Welcome to Mobile RPG!
   - Use joystick to move diagonally, vertically, or horizontally.
   - Press the right button to attack/interact.
+  - '***BLANK***'
   activateOnStartScene: 1
   triggerOnce: 0
   canMoveInDialogue: 0

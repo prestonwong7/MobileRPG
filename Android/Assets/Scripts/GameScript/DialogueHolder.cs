@@ -43,16 +43,18 @@ public class DialogueHolder : MonoBehaviour
         if (activateOnStartScene)
         {
            
-            if (dialogueManage.currentLine == dialogueLines.Length - 1)
+            if (dialogueManage.currentLine == dialogueLines.Length - 2)
             {
                 activateOnStartScene = false;
                 thePlayer.canMove = true;
                 Destroy(gameObject);
             }
-            
+            print("currentline" + dialogueManage.currentLine);
+            print(dialogueLines.Length);
         }
+        
     }
-
+    
     /*
      * Every moment the player stays inside the box
      * We don't use OnTriggerEnter2D because it just happens ONCE
@@ -61,17 +63,18 @@ public class DialogueHolder : MonoBehaviour
     {
         if (other.gameObject.name == "Player1")
         {
-            if (Input.GetKeyUp(KeyCode.Z) || joybutton.pressed) // joybutton.pressed
+            if ((Input.GetKeyUp(KeyCode.Z) || joybutton.pressed)) // joybutton.pressed
             {
                 //dialogueManage.ShowBox(dialogue);
                 // If dialogue is open, do not open dialogue again right after closing
                 if (!dialogueManage.dialogueActive ) // Restart from the first dialogue line
                 {
-                    dialogueManage.dialogueLines = dialogueLines;
-                    dialogueManage.currentLine = 0;
+                    dialogueManage.dialogueLines = dialogueLines; // Switch size 
+                    dialogueManage.currentLine = 0; // Reset to 0
                     dialogueManage.ShowDialogue();
+                    //joybutton.pressed = false; // Cant hold button down
                 }
-                if (dialogueManage.dialogueActive && dialogueManage.currentLine == dialogue.Length)
+                if (dialogueManage.dialogueActive && dialogueManage.currentLine == dialogue.Length-1)
                 {
                     thePlayer.canMove = true;
                 }
@@ -85,22 +88,7 @@ public class DialogueHolder : MonoBehaviour
 
             }
 
-            if (triggerOnce)
-            {
-                triggerOnce = false;
-                dialogueManage.dialogueLines = dialogueLines;
-                dialogueManage.currentLine = 0;
-                dialogueManage.ShowDialogue();
-                if (dialogueManage.currentLine == dialogueLines.Length - 1)
-                {
-                    //triggerOnce = false;
-                    
-                    Destroy(gameObject);
-                }
-                thePlayer.canMove = true;
-                //print(dialogueManage.currentLine);
-                //print("Dialogeu length" + dialogueLines.Length);
-            }
+           
             
             if (canMoveInDialogue)
             {
@@ -109,6 +97,28 @@ public class DialogueHolder : MonoBehaviour
         }
 
 
+    }
+
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.name == "Player1")
+        {
+            if (triggerOnce)
+            {
+                triggerOnce = false;
+                dialogueManage.dialogueLines = dialogueLines;
+                dialogueManage.currentLine = 0;
+                dialogueManage.ShowDialogue();
+                if (dialogueManage.currentLine >= dialogueLines.Length - 1)
+                {
+
+                    Destroy(gameObject);
+                }
+                thePlayer.canMove = true;
+                //print(dialogueManage.currentLine);
+                //print("Dialogeu length" + dialogueLines.Length);
+            }
+        }
     }
 }
 

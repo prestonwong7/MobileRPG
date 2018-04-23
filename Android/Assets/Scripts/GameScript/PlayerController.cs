@@ -186,6 +186,7 @@ public class PlayerController : MonoBehaviour
             myRigidBody.velocity = Vector2.zero;
             anim.SetBool("Attack", true);
             theSFXManager.playerAttack.Play(); // Play sound effect
+            //joybutton.pressed = false;
         }
         if (attackTimeCounter > 0)
         {
