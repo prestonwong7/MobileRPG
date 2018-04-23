@@ -57,13 +57,12 @@ Our team realized that a 2D Mobile RPG game wasn't common in today's era. So, we
 
 ## Contributors
 
-```sh
-Preston Wong – [My Website](https://prestonwong7.github.io) – prestonwong7@gmail.com
-Peter Kim -
-Ken Le -
-Daniel Estrada -
-Eli Ramos - 
-```
+- Preston Wong – [My Website](https://prestonwong7.github.io) – prestonwong7@gmail.com
+- Peter Kim -
+- Ken Le -
+- Daniel Estrada -
+- Eli Ramos - 
+
 ***This game uses music from Zelda, Your Lie In April, and Boku no Hero Academia***
 
 
