@@ -5,7 +5,7 @@
 [![Downloads Stats][npm-downloads]][npm-url]
 
 
-Objective
+## Work - in - Progress
 - Combat system
 - Enemies Sprite
 - Character Sprite
@@ -39,7 +39,7 @@ Windows:
 * Make sure Android phone allows Unknown Sources.
 ```
 
-## Usage example
+## Mission
 
 Our team realized that a 2D Mobile RPG game wasn't common in today's era. So, we decided to revolutionize the mobile industry with our mobile game. It comes with amazing plots, interactions, and fights!
 
@@ -57,12 +57,13 @@ Our team realized that a 2D Mobile RPG game wasn't common in today's era. So, we
 
 ## Contributors
 
+```sh
 Preston Wong – [My Website](https://prestonwong7.github.io) – prestonwong7@gmail.com
 Peter Kim -
 Ken Le -
 Daniel Estrada -
 Eli Ramos - 
-
+```
 ***This game uses music from Zelda, Your Lie In April, and Boku no Hero Academia***
 
 
