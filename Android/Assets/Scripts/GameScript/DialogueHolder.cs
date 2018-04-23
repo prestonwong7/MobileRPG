@@ -31,7 +31,7 @@ public class DialogueHolder : MonoBehaviour
                 dialogueManage.currentLine = 0;
                 dialogueManage.ShowDialogue();
             }
-            
+
         }
 
 
@@ -42,7 +42,7 @@ public class DialogueHolder : MonoBehaviour
     {
         if (activateOnStartScene)
         {
-           
+
             if (dialogueManage.currentLine == dialogueLines.Length - 2)
             {
                 activateOnStartScene = false;
@@ -52,9 +52,9 @@ public class DialogueHolder : MonoBehaviour
             print("currentline" + dialogueManage.currentLine);
             print(dialogueLines.Length);
         }
-        
+
     }
-    
+
     /*
      * Every moment the player stays inside the box
      * We don't use OnTriggerEnter2D because it just happens ONCE
@@ -66,15 +66,18 @@ public class DialogueHolder : MonoBehaviour
             if ((Input.GetKeyUp(KeyCode.Z) || joybutton.pressed)) // joybutton.pressed
             {
                 //dialogueManage.ShowBox(dialogue);
+                print("joy:" + joybutton.pressed);
+                print(dialogueManage.dialogueActive);
+                dialogueManage.dialogueActive = true;
                 // If dialogue is open, do not open dialogue again right after closing
-                if (!dialogueManage.dialogueActive ) // Restart from the first dialogue line
+                if (!dialogueManage.dialogueActive) // Restart from the first dialogue line
                 {
                     dialogueManage.dialogueLines = dialogueLines; // Switch size 
                     dialogueManage.currentLine = 0; // Reset to 0
                     dialogueManage.ShowDialogue();
                     //joybutton.pressed = false; // Cant hold button down
                 }
-                if (dialogueManage.dialogueActive && dialogueManage.currentLine == dialogue.Length-1)
+                if (dialogueManage.dialogueActive && dialogueManage.currentLine == dialogue.Length - 1)
                 {
                     thePlayer.canMove = true;
                 }
@@ -88,8 +91,11 @@ public class DialogueHolder : MonoBehaviour
 
             }
 
-           
-            
+            if (triggerOnce)
+            { 
+                Destroy(gameObject);
+            }
+     
             if (canMoveInDialogue)
             {
                 thePlayer.canMove = true;
@@ -105,19 +111,21 @@ public class DialogueHolder : MonoBehaviour
         {
             if (triggerOnce)
             {
-                triggerOnce = false;
+                thePlayer.canMove = false;
                 dialogueManage.dialogueLines = dialogueLines;
                 dialogueManage.currentLine = 0;
                 dialogueManage.ShowDialogue();
-                if (dialogueManage.currentLine >= dialogueLines.Length - 1)
-                {
-
-                    Destroy(gameObject);
-                }
-                thePlayer.canMove = true;
+                print(dialogueManage.currentLine);
+                //if (dialogueManage.currentLine >= dialogueLines.Length - 2)
+                //{
+                //    print("Hello");
+                //    Destroy(gameObject);
+                //}
+                //triggerOnce = false;
                 //print(dialogueManage.currentLine);
                 //print("Dialogeu length" + dialogueLines.Length);
             }
+
         }
     }
 }
