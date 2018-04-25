@@ -22,11 +22,16 @@ public class Settings : MonoBehaviour, IPointerUpHandler, IPointerDownHandler
     public void OnPointerDown(PointerEventData eventData)
     {
         print(eventData);
-        settingsActive = true;
-        settingsMenu.SetActive(true);
+        if (!exitActive)
+        {
+            settingsActive = true;
+            settingsMenu.SetActive(true);
+        }
         if (exitActive)
         {
-            Destroy(gameObject);
+            settingsActive = false;
+            settingsMenu.SetActive(false);
+            
         }
     }
 
