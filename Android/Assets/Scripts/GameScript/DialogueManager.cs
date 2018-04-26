@@ -37,6 +37,7 @@ public class DialogueManager : MonoBehaviour {
             //print("Total Lines: " + dialogueLines.Length);
             //print("Length: " + dialogueLines.Length);
             currentLine++;
+            
             joybutton.pressed = false; // Can't hold button down
         }
 

@@ -67,15 +67,15 @@ public class DialogueHolder : MonoBehaviour
             {
                 //dialogueManage.ShowBox(dialogue);
                 print("joy:" + joybutton.pressed);
+                
                 print(dialogueManage.dialogueActive);
-                dialogueManage.dialogueActive = true;
                 // If dialogue is open, do not open dialogue again right after closing
                 if (!dialogueManage.dialogueActive) // Restart from the first dialogue line
                 {
                     dialogueManage.dialogueLines = dialogueLines; // Switch size 
                     dialogueManage.currentLine = 0; // Reset to 0
                     dialogueManage.ShowDialogue();
-                    //joybutton.pressed = false; // Cant hold button down
+                    joybutton.pressed = false; // Cant hold button down
                 }
                 if (dialogueManage.dialogueActive && dialogueManage.currentLine == dialogue.Length - 1)
                 {
