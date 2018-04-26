@@ -169,9 +169,10 @@ MonoBehaviour:
   dialogue: Hello player.
   dialogueLines:
   - '---> Kingdom --->'
+  - '***BLANK***'
   activateOnStartScene: 0
   triggerOnce: 0
-  canMoveInDialogue: 1
+  canMoveInDialogue: 0
 --- !u!224 &131108375
 RectTransform:
   m_ObjectHideFlags: 0

@@ -152,6 +152,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 9
       objectReference: {fileID: 0}
+    - target: {fileID: 114682625971260766, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_IsPrefabParent: 0
@@ -239,6 +244,11 @@ Prefab:
     - target: {fileID: 1411494507891898, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
       propertyPath: m_Name
       value: slime_red (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114682625971260766, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
@@ -396,6 +406,11 @@ Prefab:
       propertyPath: m_Name
       value: slime_red (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114682625971260766, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_IsPrefabParent: 0
@@ -441,6 +456,11 @@ Prefab:
     - target: {fileID: 1411494507891898, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
       propertyPath: m_Name
       value: slime_red (5)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114682625971260766, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
@@ -523,6 +543,10 @@ MonoBehaviour:
   dialogue: 
   dialogueLines:
   - BEWARE OF BOULDERS!
+  - '***BLANK***'
+  activateOnStartScene: 0
+  triggerOnce: 0
+  canMoveInDialogue: 0
 --- !u!61 &1489172680
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -603,6 +627,11 @@ Prefab:
     - target: {fileID: 1411494507891898, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
       propertyPath: m_Name
       value: slime_red (6)
+      objectReference: {fileID: 0}
+    - target: {fileID: 114682625971260766, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
@@ -718,6 +747,11 @@ Prefab:
       propertyPath: m_Name
       value: slime_red (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114682625971260766, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_IsPrefabParent: 0
@@ -764,6 +798,11 @@ Prefab:
       propertyPath: m_Name
       value: slime_red (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114682625971260766, guid: 14f579cfa976a3c4d9e16c248d397354,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 14f579cfa976a3c4d9e16c248d397354, type: 2}
   m_IsPrefabParent: 0
@@ -807,7 +846,7 @@ BoxCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 1.1, y: -0.1}
+  m_Offset: {x: 0.5, y: -0.1}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0, y: 0}
@@ -818,7 +857,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 25.8, y: 18}
+  m_Size: {x: 27, y: 18}
   m_EdgeRadius: 0
 --- !u!4 &1869592614
 Transform:

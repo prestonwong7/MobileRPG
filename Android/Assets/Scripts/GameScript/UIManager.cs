@@ -21,7 +21,7 @@ public class UIManager : MonoBehaviour {
     private PlayerStats thePlayerStat;
     public Text levelText;
 
-
+   
     private static bool UIExists;
 
 	// Use this for initialization
