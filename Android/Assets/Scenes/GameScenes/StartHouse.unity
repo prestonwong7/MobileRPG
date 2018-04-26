@@ -788,7 +788,7 @@ Prefab:
     - target: {fileID: 114241047354862900, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: endText
-      value: You reached the kingdom!
+      value: You reached the kingdom! You gained 10 exp!
       objectReference: {fileID: 0}
     - target: {fileID: 114241047354862900, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
@@ -888,6 +888,16 @@ Prefab:
     - target: {fileID: 1367877628749706, guid: 434e9b7280196f4479a26c692352fce3, type: 2}
       propertyPath: m_IsActive
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114241047354862900, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: questExp
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 114438623590574194, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: questExp
+      value: 20
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 434e9b7280196f4479a26c692352fce3, type: 2}
