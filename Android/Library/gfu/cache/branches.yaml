@@ -12,38 +12,20 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2018-04-26T22:32:44.5593890-07:00
-  initializedAtString: 2018-04-26T22:32:44.5593890-07:00
+  lastUpdatedAtString: 2018-04-26T22:54:34.5962650-07:00
+  initializedAtString: 2018-04-26T22:54:34.5962650-07:00
   localBranches:
-  - name: joystick
-    tracking: origin/joystick
-    isActive: 0
-  - name: master
-    tracking: origin/master
+  - name: Ken
+    tracking: origin/Ken
     isActive: 0
   - name: preston
     tracking: origin/preston
     isActive: 1
   remoteBranches:
-  - name: origin/Daniel
-    tracking: '[None]'
-    isActive: 0
-  - name: origin/eli
-    tracking: '[None]'
-    isActive: 0
   - name: origin/HEAD
     tracking: '[None]'
     isActive: 0
-  - name: origin/joystick
-    tracking: '[None]'
-    isActive: 0
   - name: origin/Ken
-    tracking: '[None]'
-    isActive: 0
-  - name: origin/master
-    tracking: '[None]'
-    isActive: 0
-  - name: origin/peter
     tracking: '[None]'
     isActive: 0
   - name: origin/preston
@@ -59,15 +41,10 @@ MonoBehaviour:
     token: 
   localConfigBranches:
     keys:
-    - joystick
-    - master
+    - Ken
     - preston
     values:
-    - name: joystick
-      remote:
-        name: origin
-        url: https://github.com/prestonwong7/MobileRPG.git
-    - name: master
+    - name: Ken
       remote:
         name: origin
         url: https://github.com/prestonwong7/MobileRPG.git
@@ -80,41 +57,16 @@ MonoBehaviour:
     - origin
     subKeys:
     - Values:
-      - Daniel
-      - eli
       - HEAD
-      - joystick
       - Ken
-      - master
-      - peter
       - preston
     subKeyValues:
     - Values:
-      - name: Daniel
-        remote:
-          name: origin
-          url: https://github.com/prestonwong7/MobileRPG.git
-      - name: eli
-        remote:
-          name: origin
-          url: https://github.com/prestonwong7/MobileRPG.git
       - name: HEAD
         remote:
           name: origin
           url: https://github.com/prestonwong7/MobileRPG.git
-      - name: joystick
-        remote:
-          name: origin
-          url: https://github.com/prestonwong7/MobileRPG.git
       - name: Ken
-        remote:
-          name: origin
-          url: https://github.com/prestonwong7/MobileRPG.git
-      - name: master
-        remote:
-          name: origin
-          url: https://github.com/prestonwong7/MobileRPG.git
-      - name: peter
         remote:
           name: origin
           url: https://github.com/prestonwong7/MobileRPG.git
