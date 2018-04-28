@@ -65,6 +65,7 @@ public class PlayerStats : MonoBehaviour {
             if (thePlayerHealth.playerCurrentHealth <= 0)
             {
                 //deadCheck = true;
+                
                 dead = true;
                 respawnTimeCounter = respawnTime;
 

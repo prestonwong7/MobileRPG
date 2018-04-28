@@ -534,22 +534,22 @@ Prefab:
     - target: {fileID: 224166774155289834, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224166774155289834, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224380186451157878, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 224380186451157878, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 114438623590574194, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
@@ -569,7 +569,7 @@ Prefab:
     - target: {fileID: 114438623590574194, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: startText
-      value: Kill 5 Red Slimes!
+      value: 'Kill 5 Red Slimes! Reward: 20 exp'
       objectReference: {fileID: 0}
     - target: {fileID: 114438623590574194, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
@@ -783,7 +783,7 @@ Prefab:
     - target: {fileID: 114241047354862900, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: startText
-      value: Head to the Kingdom!
+      value: 'Head to the Kingdom! Reward: 10 exp'
       objectReference: {fileID: 0}
     - target: {fileID: 114241047354862900, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
@@ -1213,7 +1213,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 285125585}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5.54, y: -11.86, z: 0.109375}
+  m_LocalPosition: {x: 5, y: -12.29, z: 0.109375}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}

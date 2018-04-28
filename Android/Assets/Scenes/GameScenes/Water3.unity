@@ -113,6 +113,100 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1001 &1181935602
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 5.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 26.61
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1516412446848884, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_Name
+      value: Slime_Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyMaxHealth
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyCurrentHealth
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyExp
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: Blue Slime Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: bossFightEndScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: sceneNameToSwitch
+      value: Ken's Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: exitPoint
+      value: SlimeBossExit2
+      objectReference: {fileID: 0}
+    - target: {fileID: 114863238043331620, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: damage
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1001 &1224066144
 Prefab:
   m_ObjectHideFlags: 0
@@ -122,11 +216,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4063017921534670, guid: 0816ca27098e648f29b8990b6763a7e4, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 228.423
+      value: -104.14
       objectReference: {fileID: 0}
     - target: {fileID: 4063017921534670, guid: 0816ca27098e648f29b8990b6763a7e4, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -83.57023
+      value: 114.82
       objectReference: {fileID: 0}
     - target: {fileID: 4063017921534670, guid: 0816ca27098e648f29b8990b6763a7e4, type: 2}
       propertyPath: m_LocalPosition.z
@@ -154,15 +248,15 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 4063017921534670, guid: 0816ca27098e648f29b8990b6763a7e4, type: 2}
       propertyPath: m_LocalScale.x
-      value: 0.1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4063017921534670, guid: 0816ca27098e648f29b8990b6763a7e4, type: 2}
       propertyPath: m_LocalScale.y
-      value: 0.1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4063017921534670, guid: 0816ca27098e648f29b8990b6763a7e4, type: 2}
       propertyPath: m_LocalScale.z
-      value: 0.1
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 0816ca27098e648f29b8990b6763a7e4, type: 2}
@@ -203,11 +297,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1546519893}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 311.41, y: -176.01, z: 0.80859375}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1808092952
 GameObject:
@@ -248,5 +342,5 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
