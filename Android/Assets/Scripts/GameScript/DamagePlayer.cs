@@ -23,7 +23,7 @@ public class DamagePlayer : MonoBehaviour {
 
     private void OnCollisionEnter2D(Collision2D other) // Used when player hits a slime, or enemy object
     {
-        if (other.gameObject.name == "Player1")
+        if (other.gameObject.tag == "Player")
         {
             currentDamage = damage - thePlayerStats.currentDefense; 
             if (currentDamage <= 0)
@@ -43,7 +43,7 @@ public class DamagePlayer : MonoBehaviour {
     {
         if (ignoreOtherBoxCollider)
         {
-            if (other.gameObject.name == "Player1")
+            if (other.gameObject.name == "Player")
             {
                 currentDamage = damage - thePlayerStats.currentDefense;
                 if (currentDamage <= 0)

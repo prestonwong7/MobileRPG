@@ -31,6 +31,8 @@ public class PlayerController : MonoBehaviour
 
     public bool canMove;
 
+    public int triggerOnceCounter; // Incremenets by one whenever triggerOnce dialogue appears, follows player
+
     private PlayerHealthManager thePHM;
     private PlayerStartPoint thePSP;
 

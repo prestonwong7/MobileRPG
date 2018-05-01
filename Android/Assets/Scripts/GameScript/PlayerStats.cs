@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 /**
  * Levelling up class 
@@ -23,6 +24,8 @@ public class PlayerStats : MonoBehaviour {
     public int currentAttack;
     public int currentDefense;
 
+    private bool check;
+
     public bool dead;
     public float respawnTime;
     public float respawnTimeCounter;
@@ -32,10 +35,13 @@ public class PlayerStats : MonoBehaviour {
     private PlayerController thePC;
     private SFXManager theSFX;
     private PlayerStartPoint thePSP;
-    
 
-	// Use this for initialization
-	void Start () {
+    public Transform player;
+    public GameObject levelUpText;
+
+
+    // Use this for initialization
+    void Start () {
         currentHp = HPLevels[1];
         currentAttack = attackLevels[1];
         currentDefense = defenseLevels[1];
@@ -70,8 +76,9 @@ public class PlayerStats : MonoBehaviour {
                 respawnTimeCounter = respawnTime;
 
                 //Destroy(gameObject);
-
+                
             }
+            check = true;
         }
 
         if (dead)
@@ -89,6 +96,11 @@ public class PlayerStats : MonoBehaviour {
                 dead = false;
                 thePlayerHealth.playerCurrentHealth = thePlayerHealth.playerMaxHealth;
                 thePC.transform.position = Vector2.zero;
+            }
+            if (check)
+            {
+                currentExp = currentExp / 2;
+                check = false;
             }
         }
        
@@ -118,6 +130,9 @@ public class PlayerStats : MonoBehaviour {
         maxExp = ExpNeededToLevelUp[currentLevel];
         theSFX.playerLevelUp.Play();
 
+        //var clone = (GameObject)Instantiate(levelUpText, player.position, Quaternion.Euler(Vector3.zero)); // I dont get quaternion either
+        //clone.GetComponent<FloatingNumbers>().damageNumber = currentDamage;
+        //clone.transform.position = new Vector2(thePC.transform.position.x, thePC.transform.position.y);
 
     }
 }

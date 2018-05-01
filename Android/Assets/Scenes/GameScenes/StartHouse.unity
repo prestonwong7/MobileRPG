@@ -415,6 +415,7 @@ MonoBehaviour:
   - '***BLANK***'
   activateOnStartScene: 0
   triggerOnce: 1
+  trigger: 1
   canMoveInDialogue: 0
 --- !u!4 &140840343
 Transform:
@@ -899,6 +900,17 @@ Prefab:
       propertyPath: questExp
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 114922228156219798, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: levelUpText
+      value: 
+      objectReference: {fileID: 1100442906604330, guid: 1a03fa3597f14a44b93050b9c5ddc1ec,
+        type: 2}
+    - target: {fileID: 114922228156219798, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 1313209105}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 434e9b7280196f4479a26c692352fce3, type: 2}
   m_IsPrefabParent: 0
@@ -1602,7 +1614,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &641322717
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2468,7 +2480,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 409ac427058e019448e5bd74b231252b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  StartDirection: {x: 0, y: 0}
+  StartDirection: {x: 0, y: 1}
   pointName: HouseEntrance
 --- !u!4 &1131769464
 Transform:
@@ -2477,7 +2489,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1131769462}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 2.07, y: -15.84, z: 0}
+  m_LocalPosition: {x: 2.44, y: -15.72, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -2725,6 +2737,31 @@ Prefab:
       propertyPath: m_LocalPosition.x
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114092926658291398, guid: 4917d7b8c9aaf6f48879400dcdc21205,
+        type: 2}
+      propertyPath: levelUpText
+      value: 
+      objectReference: {fileID: 114414339362854938, guid: 1a03fa3597f14a44b93050b9c5ddc1ec,
+        type: 2}
+    - target: {fileID: 114092926658291398, guid: 4917d7b8c9aaf6f48879400dcdc21205,
+        type: 2}
+      propertyPath: collider
+      value: 
+      objectReference: {fileID: 1313209099}
+    - target: {fileID: 114092926658291398, guid: 4917d7b8c9aaf6f48879400dcdc21205,
+        type: 2}
+      propertyPath: flashLength
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 60777239930870752, guid: 4917d7b8c9aaf6f48879400dcdc21205,
+        type: 2}
+      propertyPath: m_IsTrigger
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1322466197839928, guid: 4917d7b8c9aaf6f48879400dcdc21205, type: 2}
+      propertyPath: m_TagString
+      value: Player
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 4917d7b8c9aaf6f48879400dcdc21205, type: 2}
   m_IsPrefabParent: 0
@@ -2739,6 +2776,16 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 1313209096}
   m_Script: {fileID: 11500000, guid: 876a22a3f6cc74d49b248d197817915e, type: 3}
+--- !u!60 &1313209099 stripped
+PolygonCollider2D:
+  m_PrefabParentObject: {fileID: 60777239930870752, guid: 4917d7b8c9aaf6f48879400dcdc21205,
+    type: 2}
+  m_PrefabInternal: {fileID: 1313209096}
+--- !u!4 &1313209105 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4703003740902438, guid: 4917d7b8c9aaf6f48879400dcdc21205,
+    type: 2}
+  m_PrefabInternal: {fileID: 1313209096}
 --- !u!1 &1330105238
 GameObject:
   m_ObjectHideFlags: 0
@@ -3429,7 +3476,7 @@ GameObject:
   - component: {fileID: 1671308851}
   - component: {fileID: 1671308850}
   m_Layer: 5
-  m_Name: LoadGameButton
+  m_Name: PlayerStatsButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3873,6 +3920,7 @@ MonoBehaviour:
   - '***BLANK***'
   activateOnStartScene: 0
   triggerOnce: 1
+  trigger: 0
   canMoveInDialogue: 0
 --- !u!4 &1783491480
 Transform:
@@ -4328,7 +4376,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2034494956
 RectTransform:
   m_ObjectHideFlags: 0
