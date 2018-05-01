@@ -12,6 +12,7 @@ public class QuestObject : MonoBehaviour
     public QuestManager theQuestManager;
     private JoyButton joybutton;
     private PlayerStats thePlayerStats;
+    private DialogueManager theDialogueManager;
 
     private UIManager theUI;
     public string questName;
@@ -32,6 +33,7 @@ public class QuestObject : MonoBehaviour
     {
         joybutton = FindObjectOfType<JoyButton>();
         thePlayerStats = FindObjectOfType<PlayerStats>();
+        theDialogueManager = FindObjectOfType<DialogueManager>();
     }
 
     // Update is called once per frame
@@ -50,8 +52,10 @@ public class QuestObject : MonoBehaviour
             if (enemyKillCount >= enemiesToKill)
             {
                 EndQuest();
-                if (joybutton.pressed)
+                
                 {
+                if (joybutton.pressed && theDialogueManager.dialogueActive)
+                    thePlayerStats.AddExp(questExp);
                     gameObject.SetActive(false);
                 }
             }
@@ -74,7 +78,7 @@ public class QuestObject : MonoBehaviour
     {
         theQuestManager.ShowQuestText(endText);
         theQuestManager.questCompleted[questNumber] = true;
-        thePlayerStats.AddExp(questExp);
+        
 
     }
 }

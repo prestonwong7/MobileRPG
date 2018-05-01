@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class PlayerHealthManager : MonoBehaviour {
 
@@ -19,12 +20,14 @@ public class PlayerHealthManager : MonoBehaviour {
     public float respawnTime;
     public float respawnTimeCounter;
 
+
 	// Use this for initialization
 	void Start () {
         playerCurrentHealth = playerMaxHealth;
 
         theSFXManager = FindObjectOfType<SFXManager>();
         playerSprite = GetComponent<SpriteRenderer>();
+
 	}
 	
 	// Update is called once per frame
@@ -35,25 +38,33 @@ public class PlayerHealthManager : MonoBehaviour {
             gameObject.SetActive(false);
         }
 
-       
+
         if (flashActive)
         {
             if (flashCounter > (flashLength * .6))
             {
                 playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 0f); // Invisible
-            } else if (flashCounter >= (flashLength * .3))
+            }
+            else if (flashCounter >= (flashLength * .3))
             {
                 playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f); // Visible
-            } else if (flashCounter >= 0)
+            }
+            else if (flashCounter >= 0)
             {
                 playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 0f); // Invisible
-            } else 
+            }
+            else
             {
                 playerSprite.color = new Color(playerSprite.color.r, playerSprite.color.g, playerSprite.color.b, 1f); // Change alpha color in sprite renderer to 1 , visible
                 flashActive = false;
             }
+            transform.gameObject.tag = "Untagged"; // Player cannot get hurt while flash is active
         }
-
+        else
+        {
+            transform.gameObject.tag = "Player";
+        }
+        
         flashCounter -=  Time.deltaTime;
 	}
 

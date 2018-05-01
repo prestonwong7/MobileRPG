@@ -12,7 +12,10 @@ public class DialogueHolder : MonoBehaviour
     public string[] dialogueLines;
     private PlayerController thePlayer;
     public bool activateOnStartScene;
+
     public bool triggerOnce;
+    public int trigger;
+
     public bool canMoveInDialogue;
 
     //public static bool autoPlay = true; // TRIGGER THE DIALGOUE ONCE
@@ -33,6 +36,8 @@ public class DialogueHolder : MonoBehaviour
             }
 
         }
+        
+   
 
 
     }
@@ -107,7 +112,7 @@ public class DialogueHolder : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Player1")
+        if (other.gameObject.name == "Player1" && trigger == thePlayer.triggerOnceCounter)
         {
             if (triggerOnce)
             {
@@ -116,6 +121,8 @@ public class DialogueHolder : MonoBehaviour
                 dialogueManage.currentLine = 0;
                 dialogueManage.ShowDialogue();
                 print(dialogueManage.currentLine);
+                
+                thePlayer.triggerOnceCounter++;
                 //if (dialogueManage.currentLine >= dialogueLines.Length - 2)
                 //{
                 //    print("Hello");
