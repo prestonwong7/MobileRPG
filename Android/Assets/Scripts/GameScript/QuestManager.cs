@@ -12,6 +12,7 @@ public class QuestManager : MonoBehaviour {
 
     public string enemyKilled;
 
+    
 
 	// Use this for initialization
 	void Start () {

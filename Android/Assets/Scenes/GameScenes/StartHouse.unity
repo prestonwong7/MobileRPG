@@ -221,6 +221,11 @@ RectTransform:
   m_AnchoredPosition: {x: -6.6000605, y: -0.49999952}
   m_SizeDelta: {x: 91.6, y: 126.29999}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!224 &118974129 stripped
+RectTransform:
+  m_PrefabParentObject: {fileID: 224698536356631150, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 160056057}
 --- !u!1 &121573175
 GameObject:
   m_ObjectHideFlags: 0
@@ -437,6 +442,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114042274951982184, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: quests.Array.size
+      value: 7
+      objectReference: {fileID: 0}
     - target: {fileID: 224907932486887094, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: m_LocalPosition.x
@@ -766,12 +776,12 @@ Prefab:
     - target: {fileID: 224633150523492494, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 224589590567031510, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: m_RootOrder
-      value: 2
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 1033421383836276, guid: 434e9b7280196f4479a26c692352fce3, type: 2}
       propertyPath: m_Name
@@ -779,7 +789,7 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 1306194606152034, guid: 434e9b7280196f4479a26c692352fce3, type: 2}
       propertyPath: m_Name
-      value: Quest 1
+      value: Quest 2
       objectReference: {fileID: 0}
     - target: {fileID: 114241047354862900, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
@@ -824,7 +834,7 @@ Prefab:
     - target: {fileID: 114438623590574194, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: questNumber
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 114042274951982184, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
@@ -835,7 +845,7 @@ Prefab:
         type: 2}
       propertyPath: quests.Array.data[1]
       value: 
-      objectReference: {fileID: 1111889362}
+      objectReference: {fileID: 1673416880}
     - target: {fileID: 114407110599596972, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: m_Text
@@ -911,6 +921,69 @@ Prefab:
       propertyPath: player
       value: 
       objectReference: {fileID: 1313209105}
+    - target: {fileID: 114418724661927358, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: playAfterQuest
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418724661927358, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: questName
+      value: MainTent
+      objectReference: {fileID: 0}
+    - target: {fileID: 1367877628749706, guid: 434e9b7280196f4479a26c692352fce3, type: 2}
+      propertyPath: m_Name
+      value: Quest 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418724661927358, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: questNumber
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418724661927358, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: startText
+      value: Go to main tent and talk to Ilios!
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418724661927358, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: questExp
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114418724661927358, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: questText
+      value: 
+      objectReference: {fileID: 340582328}
+    - target: {fileID: 114042274951982184, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: quests.Array.data[3]
+      value: 
+      objectReference: {fileID: 1683389867}
+    - target: {fileID: 114042274951982184, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: quests.Array.data[4]
+      value: 
+      objectReference: {fileID: 1316904448}
+    - target: {fileID: 114042274951982184, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: quests.Array.data[5]
+      value: 
+      objectReference: {fileID: 1651703470}
+    - target: {fileID: 114042274951982184, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: quests.Array.data[2]
+      value: 
+      objectReference: {fileID: 1111889362}
+    - target: {fileID: 114042274951982184, guid: 434e9b7280196f4479a26c692352fce3,
+        type: 2}
+      propertyPath: quests.Array.data[6]
+      value: 
+      objectReference: {fileID: 1408598339}
+    - target: {fileID: 1424541139950558, guid: 434e9b7280196f4479a26c692352fce3, type: 2}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 434e9b7280196f4479a26c692352fce3, type: 2}
   m_IsPrefabParent: 0
@@ -966,7 +1039,7 @@ Prefab:
         type: 2}
       propertyPath: m_audioClip
       value: 
-      objectReference: {fileID: 8300000, guid: d9bbebc7ac7f9e24faa872969246af9d, type: 3}
+      objectReference: {fileID: 8300000, guid: 16da9e60f79b1a14fa1ccd439ff62066, type: 3}
     - target: {fileID: 82062440037946652, guid: 6e218fe157ec44a89adfc1c552246582,
         type: 2}
       propertyPath: m_Volume
@@ -980,6 +1053,80 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e218fe157ec44a89adfc1c552246582, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &237967472
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 237967473}
+  - component: {fileID: 237967475}
+  - component: {fileID: 237967474}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &237967473
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 237967472}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1316904447}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 651.4, y: 301.7}
+  m_SizeDelta: {x: 270, y: 58.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &237967474
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 237967472}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Go to the secondary tent and talk to Kios!
+--- !u!222 &237967475
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 237967472}
 --- !u!1 &243490273
 GameObject:
   m_ObjectHideFlags: 0
@@ -1163,74 +1310,80 @@ Transform:
   m_Father: {fileID: 610432448}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &285125585
+--- !u!1 &295986863
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 285125588}
-  - component: {fileID: 285125587}
-  - component: {fileID: 285125586}
-  m_Layer: 0
-  m_Name: WaterLoad
+  - component: {fileID: 295986864}
+  - component: {fileID: 295986866}
+  - component: {fileID: 295986865}
+  m_Layer: 5
+  m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!61 &285125586
-BoxCollider2D:
+--- !u!224 &295986864
+RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 285125585}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0, y: 0}
-    oldSize: {x: 0, y: 0}
-    newSize: {x: 0, y: 0}
-    adaptiveTilingThreshold: 0
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!114 &285125587
+  m_GameObject: {fileID: 295986863}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1683389866}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 651.4, y: 316}
+  m_SizeDelta: {x: 270, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &295986865
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 285125585}
+  m_GameObject: {fileID: 295986863}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6189d3d78a87c864b93d0db70d951d98, type: 3}
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadArea: Water1
-  exitPoint: Water1Entrance
---- !u!4 &285125588
-Transform:
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Go back to the main tent and talk to Ilios!
+--- !u!222 &295986866
+CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 285125585}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 5, y: -12.29, z: 0.109375}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 11
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_GameObject: {fileID: 295986863}
 --- !u!1 &331818596
 GameObject:
   m_ObjectHideFlags: 0
@@ -1305,6 +1458,80 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 331818596}
+--- !u!1 &340582326
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 340582327}
+  - component: {fileID: 340582329}
+  - component: {fileID: 340582328}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &340582327
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340582326}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 118974129}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 250.01996, y: 98.9}
+  m_SizeDelta: {x: 270, y: 58.5}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &340582328
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340582326}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: Go to main tent and talk to Ilios!
+--- !u!222 &340582329
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 340582326}
 --- !u!224 &363354411 stripped
 RectTransform:
   m_PrefabParentObject: {fileID: 224907932486887094, guid: 434e9b7280196f4479a26c692352fce3,
@@ -1476,6 +1703,82 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 393576588}
+--- !u!1 &410578873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 410578874}
+  - component: {fileID: 410578876}
+  - component: {fileID: 410578875}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &410578874
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410578873}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1651703469}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 642.6, y: 316}
+  m_SizeDelta: {x: 287.6, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &410578875
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410578873}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Kill 10 Water Slimes: 0/10
+
+'
+--- !u!222 &410578876
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 410578873}
 --- !u!1 &537203064
 GameObject:
   m_ObjectHideFlags: 0
@@ -2183,6 +2486,74 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 888984333}
+--- !u!1 &999813556
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 999813559}
+  - component: {fileID: 999813558}
+  - component: {fileID: 999813557}
+  m_Layer: 0
+  m_Name: Castle5Entrance
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &999813557
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 999813556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6189d3d78a87c864b93d0db70d951d98, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  loadArea: Castle
+  exitPoint: CastleEntrance
+--- !u!61 &999813558
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 999813556}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 3, y: 1.6}
+  m_EdgeRadius: 0
+--- !u!4 &999813559
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 999813556}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -2.04, y: -10.51, z: 0.15820312}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 11
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1034040037
 GameObject:
   m_ObjectHideFlags: 0
@@ -2606,11 +2977,11 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 887827468}
-  m_RootOrder: 0
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 260.9, y: 140.2}
+  m_AnchoredPosition: {x: 242, y: 138}
   m_SizeDelta: {x: 160, y: 27.4}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1217049448
@@ -2645,13 +3016,21 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Quests
+  m_Text: 'Quest
+
+'
 --- !u!222 &1217049449
 CanvasRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1217049446}
+--- !u!114 &1294722365 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114042274951982184, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 160056057}
+  m_Script: {fileID: 11500000, guid: 588124cf65ed917499b285285fc002e3, type: 3}
 --- !u!1001 &1313209096
 Prefab:
   m_ObjectHideFlags: 0
@@ -2694,7 +3073,7 @@ Prefab:
     - target: {fileID: 114721957083741512, guid: 4917d7b8c9aaf6f48879400dcdc21205,
         type: 2}
       propertyPath: moveSpeed
-      value: 5
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 114721957083741512, guid: 4917d7b8c9aaf6f48879400dcdc21205,
         type: 2}
@@ -2786,6 +3165,69 @@ Transform:
   m_PrefabParentObject: {fileID: 4703003740902438, guid: 4917d7b8c9aaf6f48879400dcdc21205,
     type: 2}
   m_PrefabInternal: {fileID: 1313209096}
+--- !u!1 &1316904446
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1306194606152034, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1316904447}
+  - component: {fileID: 1316904448}
+  m_Layer: 5
+  m_Name: Quest 4
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1316904447
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224589590567031510, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316904446}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+  m_Children:
+  - {fileID: 237967473}
+  m_Father: {fileID: 887827468}
+  m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -441.48, y: -204.63998}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1316904448
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114438623590574194, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1316904446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abdff73fbcc82404d8109de3bf6428d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 4
+  questExp: 5
+  theQuestManager: {fileID: 1294722365}
+  questName: Go to the secondary tent and talk to Kios!
+  questText: {fileID: 237967474}
+  startText: Go to the secondary tent and talk to Kios!
+  endText: Congratulations, you got 5 exp!
+  isEnemyQuest: 0
+  targetEnemy: Red Slimes
+  enemiesToKill: 5
+  enemyKillCount: 0
+  playAfterQuest: 0
+  questNumberAfterQuest: 0
+  questNameNumber: 
 --- !u!1 &1330105238
 GameObject:
   m_ObjectHideFlags: 0
@@ -3036,7 +3478,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 1. Head to the Kingdom!
+  m_Text: Head to the Kingdom!
 --- !u!222 &1372140400
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3061,6 +3503,69 @@ RectTransform:
   m_AnchoredPosition: {x: 692.9, y: 314}
   m_SizeDelta: {x: 275.5, y: 38.6}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1408598337
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1306194606152034, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1408598338}
+  - component: {fileID: 1408598339}
+  m_Layer: 5
+  m_Name: Quest 6
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1408598338
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224589590567031510, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408598337}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+  m_Children:
+  - {fileID: 1895332752}
+  m_Father: {fileID: 887827468}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -441.48, y: -204.63998}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1408598339
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114438623590574194, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1408598337}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abdff73fbcc82404d8109de3bf6428d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 5
+  questExp: 5
+  theQuestManager: {fileID: 1294722365}
+  questName: WaterSlimeCompletion
+  questText: {fileID: 1895332753}
+  startText: Talk to Kios
+  endText: 'Congrats! Reward: 5 exp'
+  isEnemyQuest: 0
+  targetEnemy: 
+  enemiesToKill: 0
+  enemyKillCount: 0
+  playAfterQuest: 0
+  questNumberAfterQuest: 0
+  questNameNumber: 
 --- !u!1 &1527025664
 GameObject:
   m_ObjectHideFlags: 0
@@ -3463,6 +3968,69 @@ MonoBehaviour:
     type: 2}
   m_PrefabInternal: {fileID: 160056057}
   m_Script: {fileID: 11500000, guid: abdff73fbcc82404d8109de3bf6428d1, type: 3}
+--- !u!1 &1651703468
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1306194606152034, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1651703469}
+  - component: {fileID: 1651703470}
+  m_Layer: 5
+  m_Name: Quest 5
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1651703469
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224589590567031510, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651703468}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+  m_Children:
+  - {fileID: 410578874}
+  m_Father: {fileID: 887827468}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -441.48, y: -204.63998}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1651703470
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114438623590574194, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1651703468}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abdff73fbcc82404d8109de3bf6428d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 5
+  questExp: 50
+  theQuestManager: {fileID: 1294722365}
+  questName: Kill 10 Water Slimes
+  questText: {fileID: 410578875}
+  startText: 'Kill 10 Water Slimes. Reward: 50 exp'
+  endText: 'Congrats! Reward: 50 exp'
+  isEnemyQuest: 1
+  targetEnemy: Water Slime
+  enemiesToKill: 10
+  enemyKillCount: 0
+  playAfterQuest: 0
+  questNumberAfterQuest: 0
+  questNameNumber: 
 --- !u!1 &1671308848
 GameObject:
   m_ObjectHideFlags: 0
@@ -3597,6 +4165,12 @@ CanvasRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1671308848}
+--- !u!114 &1673416880 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114418724661927358, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 160056057}
+  m_Script: {fileID: 11500000, guid: abdff73fbcc82404d8109de3bf6428d1, type: 3}
 --- !u!1 &1680214523
 GameObject:
   m_ObjectHideFlags: 0
@@ -3706,6 +4280,69 @@ Transform:
   m_Father: {fileID: 610432448}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1683389865
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1306194606152034, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1683389866}
+  - component: {fileID: 1683389867}
+  m_Layer: 5
+  m_Name: Quest 3
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!224 &1683389866
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224589590567031510, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1683389865}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+  m_Children:
+  - {fileID: 295986864}
+  m_Father: {fileID: 887827468}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -441.48, y: -204.63998}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1683389867
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 114438623590574194, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1683389865}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: abdff73fbcc82404d8109de3bf6428d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 3
+  questExp: 5
+  theQuestManager: {fileID: 1294722365}
+  questName: RedSlimeComplete
+  questText: {fileID: 295986865}
+  startText: Go back to the main tent and talk to Ilios!
+  endText: 
+  isEnemyQuest: 0
+  targetEnemy: 
+  enemiesToKill: 5
+  enemyKillCount: 0
+  playAfterQuest: 0
+  questNumberAfterQuest: 0
+  questNameNumber: 
 --- !u!1 &1702228369
 GameObject:
   m_ObjectHideFlags: 0
@@ -4360,6 +4997,165 @@ RectTransform:
 GameObject:
   m_PrefabParentObject: {fileID: 100008, guid: b6a1cf4e3eeaf9a4ca38bf8acb910a6d, type: 2}
   m_PrefabInternal: {fileID: 1878043147}
+--- !u!1 &1895332751
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1895332752}
+  - component: {fileID: 1895332754}
+  - component: {fileID: 1895332753}
+  m_Layer: 5
+  m_Name: Text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1895332752
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1895332751}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1408598338}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 651.4, y: 316}
+  m_SizeDelta: {x: 270, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1895332753
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1895332751}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 24
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 2
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+  m_Text: 'Kill 10 Water Slimes
+
+'
+--- !u!222 &1895332754
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1895332751}
+--- !u!1 &1976540573
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 1033421383836276, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1976540574}
+  - component: {fileID: 1976540577}
+  - component: {fileID: 1976540576}
+  - component: {fileID: 1976540575}
+  m_Layer: 5
+  m_Name: QuestHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1976540574
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 224633150523492494, guid: 434e9b7280196f4479a26c692352fce3,
+    type: 2}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976540573}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0.9999999, y: 0.9999999, z: 0.9999999}
+  m_Children: []
+  m_Father: {fileID: 887827468}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -475.66, y: -208.47}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1976540575
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976540573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9807f7dd33fa27946a2c8e39976f265a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 5
+  startQuest: 1
+  endQuest: 0
+  triggerQuestAfterCompletion: 1
+--- !u!114 &1976540576
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976540573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9807f7dd33fa27946a2c8e39976f265a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 4
+  startQuest: 1
+  endQuest: 0
+  triggerQuestAfterCompletion: 1
+--- !u!114 &1976540577
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1976540573}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9807f7dd33fa27946a2c8e39976f265a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  questNumber: 3
+  startQuest: 1
+  endQuest: 0
+  triggerQuestAfterCompletion: 1
 --- !u!1 &2034494955
 GameObject:
   m_ObjectHideFlags: 0
@@ -4480,7 +5276,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: '2. Kill 5 Red Slimes: 0/5'
+  m_Text: 'Kill 5 Red Slimes: 0/5'
 --- !u!222 &2057255722
 CanvasRenderer:
   m_ObjectHideFlags: 0

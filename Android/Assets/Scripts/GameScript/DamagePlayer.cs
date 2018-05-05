@@ -43,7 +43,7 @@ public class DamagePlayer : MonoBehaviour {
     {
         if (ignoreOtherBoxCollider)
         {
-            if (other.gameObject.name == "Player")
+            if (other.gameObject.tag == "Player")
             {
                 currentDamage = damage - thePlayerStats.currentDefense;
                 if (currentDamage <= 0)

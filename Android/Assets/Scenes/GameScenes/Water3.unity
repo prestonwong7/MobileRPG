@@ -338,6 +338,120 @@ Prefab:
       propertyPath: m_LocalScale.y
       value: 10
       objectReference: {fileID: 0}
+    - target: {fileID: 1861327939562126, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_Name
+      value: Slime Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 224419753579612210, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224419753579612210, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 6.13
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 27.53
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 224231353872751730, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.y
+      value: -1.116
+      objectReference: {fileID: 0}
+    - target: {fileID: 224231353872751730, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_SizeDelta.y
+      value: 0.131
+      objectReference: {fileID: 0}
+    - target: {fileID: 224231353872751730, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.934
+      objectReference: {fileID: 0}
+    - target: {fileID: 224231353872751730, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_SizeDelta.x
+      value: 1.3572
+      objectReference: {fileID: 0}
+    - target: {fileID: 114350969392776336, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_FillCenter
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114350969392776336, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114408184096841524, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_Type
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607675572567218, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyMaxHealth
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607675572567218, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyCurrentHealth
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607675572567218, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyExp
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607675572567218, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: Water Slime Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607675572567218, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: bossFightEndScene
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607675572567218, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: sceneNameToSwitch
+      value: Ken's Map
+      objectReference: {fileID: 0}
+    - target: {fileID: 114607675572567218, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: exitPoint
+      value: Water1Back
+      objectReference: {fileID: 0}
+    - target: {fileID: 114135292859233814, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: timeBetweenMove
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114135292859233814, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: timeToMove
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
   m_IsPrefabParent: 0

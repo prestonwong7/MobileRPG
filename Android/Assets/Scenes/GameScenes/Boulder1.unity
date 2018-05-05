@@ -574,6 +574,10 @@ Prefab:
       propertyPath: m_LocalScale.z
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 4685409030862112, guid: fe5963a2a9ee74dee95ee58629525713, type: 2}
+      propertyPath: m_RootOrder
+      value: 26
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: fe5963a2a9ee74dee95ee58629525713, type: 2}
   m_IsPrefabParent: 0
@@ -745,7 +749,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   loadArea: Ken's Map
-  exitPoint: MainMapExit
+  exitPoint: MainMapEntrance
 --- !u!61 &1015061358
 BoxCollider2D:
   m_ObjectHideFlags: 0
