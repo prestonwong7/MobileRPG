@@ -26,6 +26,10 @@ public class QuestObject : MonoBehaviour
     public int enemiesToKill;
     public int enemyKillCount;
 
+    public bool playAfterQuest;
+    public int questNumberAfterQuest;
+    public string questNameNumber;
+
     //Enemy kill count needs to start 0 instead of 1
 
     // Use this for initialization
@@ -55,15 +59,22 @@ public class QuestObject : MonoBehaviour
                 
                 {
                 if (joybutton.pressed && theDialogueManager.dialogueActive)
-                    thePlayerStats.AddExp(questExp);
+                    
                     gameObject.SetActive(false);
                 }
             }
             // for UI
             questText.text = questName + ": " + enemyKillCount + "/" + enemiesToKill;
         }
-
-
+        //if (playAfterQuest)
+        //{
+        //    if (theQuestManager.questCompleted[questNumberAfterQuest])
+        //    {
+        //        //gameObject.transform.Find(questNameNumber).setActive(true);
+        //        StartQuest();
+        //    }
+        //}
+        
 
     }
 
@@ -76,6 +87,7 @@ public class QuestObject : MonoBehaviour
 
     public void EndQuest()
     {
+        thePlayerStats.AddExp(questExp);
         theQuestManager.ShowQuestText(endText);
         theQuestManager.questCompleted[questNumber] = true;
         

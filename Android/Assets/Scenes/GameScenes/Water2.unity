@@ -118,7 +118,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 882926622}
     m_Modifications:
     - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -152,9 +152,36 @@ Prefab:
       propertyPath: m_RootOrder
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: bossFightEndScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: Water Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -0.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 10.73
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &138603431 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+    type: 2}
+  m_PrefabInternal: {fileID: 138603430}
 --- !u!1001 &772815330
 Prefab:
   m_ObjectHideFlags: 0
@@ -270,19 +297,56 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 782819952}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.12, y: -2.72, z: 0}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -3.5195842, y: -7.387844, z: 0.26953125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
+  m_Father: {fileID: 1832195233}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &882926621
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 882926622}
+  m_Layer: 0
+  m_Name: Enemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &882926622
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 882926621}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 11.105423, y: 15.521896, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 138603431}
+  - {fileID: 2018451334}
+  - {fileID: 1992626938}
+  - {fileID: 1766181805}
+  - {fileID: 1496574538}
+  - {fileID: 1493198302}
+  - {fileID: 929240904}
+  - {fileID: 1698941634}
+  - {fileID: 1734356099}
   m_Father: {fileID: 0}
-  m_RootOrder: 12
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &929240903
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 882926622}
     m_Modifications:
     - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -320,9 +384,36 @@ Prefab:
       propertyPath: m_Name
       value: slime_blue (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: bossFightEndScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: Water Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -12.35
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -0.31
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &929240904 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+    type: 2}
+  m_PrefabInternal: {fileID: 929240903}
 --- !u!1 &1410336128
 GameObject:
   m_ObjectHideFlags: 0
@@ -360,10 +451,10 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1410336128}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -3.639584, y: -4.6678443, z: 0.26953125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
+  m_Father: {fileID: 1832195233}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!61 &1410336131
@@ -396,7 +487,7 @@ Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 882926622}
     m_Modifications:
     - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -434,15 +525,42 @@ Prefab:
       propertyPath: m_Name
       value: slime_blue (6)
       objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: bossFightEndScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: Water Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_RootOrder
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -13.58
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.49
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1493198302 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1493198301}
 --- !u!1001 &1496574537
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 882926622}
     m_Modifications:
     - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -480,9 +598,36 @@ Prefab:
       propertyPath: m_Name
       value: slime_blue (5)
       objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: bossFightEndScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: Water Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_RootOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -8.57
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 14.35
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1496574538 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1496574537}
 --- !u!1 &1547156642
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,7 +692,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 0.1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 11
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1687557393
 GameObject:
@@ -611,12 +756,63 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1687557393}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16, y: 45.47, z: 0}
+  m_LocalPosition: {x: -3.479584, y: 40.80216, z: 0.26953125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_Father: {fileID: 1832195233}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1698941633
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 882926622}
+    m_Modifications:
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -6.0766296
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 24.261246
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_RootOrder
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 1861327939562126, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_Name
+      value: slime_blue (1)
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1698941634 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1698941633}
 --- !u!1 &1726278753
 GameObject:
   m_ObjectHideFlags: 0
@@ -653,18 +849,65 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1726278753}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16, y: 45.47, z: 0}
+  m_LocalPosition: {x: -3.479584, y: 40.80216, z: 0.26953125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_Father: {fileID: 1832195233}
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1734356098
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 882926622}
+    m_Modifications:
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -17.421566
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 18.009953
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_RootOrder
+      value: 8
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+  m_IsPrefabParent: 0
+--- !u!4 &1734356099 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1734356098}
 --- !u!1001 &1766181804
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 882926622}
     m_Modifications:
     - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -702,15 +945,74 @@ Prefab:
       propertyPath: m_Name
       value: slime_blue (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: bossFightEndScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: Water Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -19.06
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 1.93
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1766181805 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1766181804}
+--- !u!1 &1832195232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1832195233}
+  m_Layer: 0
+  m_Name: EntrancesAndExits
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1832195233
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1832195232}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 3.639584, y: 4.6678443, z: -0.26953125}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 782819955}
+  - {fileID: 1410336130}
+  - {fileID: 1726278755}
+  - {fileID: 1687557396}
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1992626937
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 882926622}
     m_Modifications:
     - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -748,15 +1050,52 @@ Prefab:
       propertyPath: m_Name
       value: slime_blue (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: bossFightEndScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: Water Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_RootOrder
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: -4.86
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -7.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 224419753579612210, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224419753579612210, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &1992626938 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+    type: 2}
+  m_PrefabInternal: {fileID: 1992626937}
 --- !u!1001 &2018451333
 Prefab:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    m_TransformParent: {fileID: 0}
+    m_TransformParent: {fileID: 882926622}
     m_Modifications:
     - target: {fileID: 4608953160550322, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
       propertyPath: m_LocalPosition.x
@@ -794,6 +1133,43 @@ Prefab:
       propertyPath: m_Name
       value: slime_blue (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: bossFightEndScene
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114833104982491948, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: enemyQuestName
+      value: Water Slime
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 1.85
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: -10.8
+      objectReference: {fileID: 0}
+    - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 224419753579612210, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224419753579612210, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &2018451334 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
+    type: 2}
+  m_PrefabInternal: {fileID: 2018451333}

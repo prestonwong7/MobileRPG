@@ -11,6 +11,7 @@ public class QuestTrigger : MonoBehaviour {
     public bool startQuest;
     public bool endQuest;
 
+    public bool triggerQuestAfterCompletion;
 	// Use this for initialization
 	void Start () {
         theQuestManager = FindObjectOfType<QuestManager>();
@@ -18,7 +19,21 @@ public class QuestTrigger : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		
+        if (triggerQuestAfterCompletion)
+        {
+            if (!theQuestManager.questCompleted[questNumber]) // If the current quest is not completed, so quest DOES NOT REPEAT
+            {
+                if (startQuest == true && !theQuestManager.quests[questNumber].gameObject.activeSelf) // If quest has already started and NOT ACTIVATED
+                {
+                    if (theQuestManager.questCompleted[questNumber - 1])
+                    {
+
+                        theQuestManager.quests[questNumber].gameObject.SetActive(true); // Quest started!
+                        theQuestManager.quests[questNumber].StartQuest();
+                    }
+                }
+            }
+        }
 	}
 
     private void OnTriggerEnter2D(Collider2D other)
@@ -29,6 +44,7 @@ public class QuestTrigger : MonoBehaviour {
             {
                 if (startQuest == true && !theQuestManager.quests[questNumber].gameObject.activeSelf) // If quest has already started and NOT ACTIVATED
                 {
+                    
                     theQuestManager.quests[questNumber].gameObject.SetActive(true); // Quest started!
                     theQuestManager.quests[questNumber].StartQuest();
                 }
@@ -39,6 +55,7 @@ public class QuestTrigger : MonoBehaviour {
                     theQuestManager.quests[questNumber].gameObject.SetActive(false);
                 }
             }
+ 
         }
     }
 }
