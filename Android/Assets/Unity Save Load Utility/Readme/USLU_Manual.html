@@ -1,0 +1,133 @@
+<HTML>
+<head>
+<Title>Unity Save Load Utility Manual</Title>
+</head>
+<body>
+<p><font size="6"><strong>Unity Save Load Utility (USLU)</strong></font><br>
+<font size="5">(formerly SerializeHelper)</font></p>
+<br>
+<p>
+<font size="4"><strong>1. What is USLU?</strong></font><br>
+<br>
+USLU is an asset for Unity which aims to provide a simple yet effective save and load feature for games or other runtime applications like map editors. The scripts have been written in a way that should be easy to understand for those just starting their experience with save and load functionality. Not only is the syntax easy to follow, but there are also lots of comments scattered throughout the code that help the developer understand what certain code parts do. This was all done because USLU is not meant as a All-in-one solution; while you can perfectly use it as it is, when developing complex games you will find that your project requires more functionality than provided by USLU. However, since you understand how it works and are given various examples, you should find it comparitively easy to extend USLU's functionality to suit your project's needs.
+</p>
+<font size="4"><strong>2. Why USLU?</strong></font><br>
+<br>
+Let's talk about serialization for a moment. Serialization means converting data into a form that can be read from or written to memory of any kind. This includes writing to a file on hard disk. As long as you use only Namespace System Types in your classes, that's fine because those will serialize without a hitch. However, Unity brings a whole bunch of stuff to the table which can't be serialized directly. This begins with the basic scripts which inherit from MonoBehavior, and goes on for specific Types like Quaternion etc. These Types need to be converted into serializable form, which USLU does in different ways.
+</p>
+<p>
+<font size="4"><strong>3. How does it work ? (in simple words)</strong></font><br>
+<br>
+In order to explain the inner workings, let's first look at some classes which hold the data you want to save and load, and the scripts and functions that use this data.
+<p>
+<font size="3"><strong>3.1 ObjectComponent</strong></font><br>
+<br>
+The ObjectComponent class is the most basic building block of USLU. It holds all the information of a single Unity component; Most important is the fields variable, which is a Dictionary<string,object>. This brings us already to the way USLU converts data into serializable form. Each field* of a component is checked, and if it is found to be ok to save, then this field's name is added to the fields dictionary as the key along with a new Dictionary<string,object> as the value. Now the current field's fields are again checked in the same way and the cycle continues until some special "ending cases" are reached. The most common is that a field Type's Namespace is System, which means we don't need to break it down any further since all System Namespace Types can be handled by the serializer. Examples for System Namespace Types are integers, strings, and floats. It's also possible that a ISerializationSurrogate has been found for a certain Type; we will explain those later. Any way, once an end case case been reached, no new dictionary is added as the base dictionary's value, but instead, the current field's value.<br>
+<br>
+When loading a game, the fields dictionary of an ObjectComponent is iterated over, and each field name is tried to be found in the component that should be "filled" with the loaded data.
+*Actually, properties are checked as well, but for the sake of clarity we will regard those as fields, too.
+</p>
+<p>
+<font size="3"><strong>3.2 SceneObject</strong></font><br>
+<br>
+The SceneObject class holds all the data of a GameObject in serializable form, such as it's name, it's tag, and so on. Of particular note here are two variables: The id (and idParent) variables hold unique identification strings. This is need to find the right set of loaded data for the right GameObject, and to reestablish parent-child connections. The other important variable os objectComponents. This is simply a List of ObjectComponents and mirrors a GameObject's attached components. 
+</p>
+<p>
+<font size="3"><strong>3.3 SaveGame</strong></font><br>
+<br>
+The SaveGame class is the top-level building block. It can basically hold anything you like, such as the current ambient scene lighting, the in-game time, any kind of gobal variables and so on. "Hard-coded", however, is (besides the savegame name and save time and data) a List of SceneObjects which hold all the GameObjects that should be saved, converted into serializable form as SceneObjects. Note that only GameObjects that have the ObjectIdentifier component can be saved.
+</p>
+<p>
+<font size="3"><strong>3.4 ObjectIdentifer Component</strong></font><br>
+<br>
+This component needs to be attached to all GameObjects that should be saved. A word of advice here: Never completely disable a GameObject with an ObjectIdentifier component. Disabled GameObject's can't be found in any way by Unity except if you hold a reference to it somehow. The prefabName variable should always reflect just that: The name of that GameObject's Prefab in the Resource folder.
+</p>
+<p>
+<font size="3"><strong>3.5 PersistenceMarker</strong></font><br>
+<br>
+This component doesn't have any variables at all. It is just there to mark a GameObject as persistent, meaning that it will not be destroyed when a game is loaded (as everything else in the scene is). Use will probably want to use it for things like a game manager, the UI, and everything else that should stay as long as the game is running.
+</p>
+</p>
+
+<p>
+<font size="4"><strong>4. SaveLoadUtility</strong></font><br>
+<br>
+This script lies at the heart of USLU. It holds all the functions which convert data into serializable form and back. It's probably easier to just read the commented section in the code itself, wo we will just take a quick look at some of the important variables here.<br>
+<br>
+saveGamePath: The path of your hard drive directory where your save file will be saved to and loaded from.<br>
+<br>
+prefabDictionary: In Start(), this will load all ObjectIdentifier components that are found attached to GameObject in the Resources folder (it can be anywhere in the Resources folder <br>
+hierarchy) and add their GameObjects to this dictionary, with the GameObject's name as the key. This is used to re-instantiate a GameObject after it's data has been loaded.<br>
+<br>
+surrogateTypes: This list holds the names of all Types which have an ISerializationSurrogate (see below). Remember to keep this list up-to-date when you remove or add <br>
+<br>
+ISerializationSurrogates. The list is not visible in the inspector so you should hard-code it.<br>
+<br>
+propertySelectors: If you save a MonoBehavior component (script)'s data, all fields and properties will be saved. However, for a non-MonoBehavior component (like Transform), only fields are saved and no properties, except if you have specified a PropertySelector in this list. The reason why this is needed is because Unity's components have dozens or properties which don't need to be saved, so in order to make things simpler only the really important properties are defined. The existing PropertySelector for Transform should provide enough of an example should you want to add your own. The list is not visible in the inspector so you should hard-code it.<br>
+
+</p>
+
+<p>
+<font size="4"><strong>5. SaveLoad</strong></font><br>
+<br>
+This is a static class that actually serializes and deserializes our data and writes it to a file on our hard disk. It will also apply any ISerializationSurrogates (see below). There is once important variable here: objectIdentifierDict, which holds references to all ObjectIdentifier components whose GameObject will be saved, or whose GameObjects were re-instantiated after loading. These are accessed by their id.
+</p>
+<p>
+<font size="4"><strong>6. ISerializationSurrogates</strong></font><br>
+<br>
+ISerializationSurrogates (ISS) tells a BinaryFormatter how to (de)serialize certain Types. We make use of this option for a few of Unity's Types, like Quaternion and Color. You might think "these are just made of a bunch of floats, why not just convert them like any other Type?" The reason for that is because we can assign a certain value to a Quaternion's x field, for example, but that won't change the Quaternion as a whole; we have to assign the Quaternion value as a whole, which is why it's simplest to use an ISS which does this for us. ISS can be used for virtually any Type, so feel free to make your own. Just remember two things: 1. Add the Surrogate to the SurrogateSelector that is used by the BinaryFormatter (see the AddSurrogates function), and 2. the Type name must be added to the surrogateTypes list of SaveLoadUtility.
+</p>
+<p>
+<font size="4"><strong>7. Collections</strong></font><br>
+<br>
+Three collection Types are supported: Arrays, Generic Lists and Generic Dictionaries. Onle one-dimensional arrays are supported, although it's trivial to flatten and expand multi-dimensional arrays if you pass the relevant Length values along with the array. While it is of course possible for you to write your own code to support other Types, be aware that this will be a very difficult task. Including collection support was a major headache and even if it's not perfect, I'm still glad it's part of USLU the way it is.
+</p>
+<p>
+<font size="4"><strong>8. Controlling what is saved and what isn't</strong></font><br>
+<br>
+<font size="3"><strong>8.1 USLU Attributes</strong><br>
+<br>
+There are several levels and way to decide what and how something will be saved and loaded. ISerializationSurrogates are explained above. Another thing are the PropertySelectors described in section 4: SaveLoadUtility. There is lower level than that: You can tell USLU exactly which fields should be saved and which shouldn't. The way you do this is as follows.<br>
+By default, a class has no attribute inheriting from USLUAttribute. That means that all fields will be saved if possible. If a field has the Attribute [DontSaveMember], then that field won't be saved.<br>
+If a class has the attribute [SaveNoMembers], then no fields will be saved except for those which have the [SaveMember] attribute.<br>
+<br>
+In short: If the majority of a class' fields should be saved: Give those fields that shouldn't be saved the DontSaveMember attribute. If the majority of a class's field should not be saved, give those fields you do want to save the SaveMember attribute.<br>
+<br>
+<font size="3"><strong>8.2 ComponentSaveMode</strong><br>
+<br>
+The ObjectIdentifier component holds a variable called componentSaveMode. This enum controls which components of a GameObejct are elgible for saving. Except for the last two modes, the Transform component as well as any MonoBehavior scripts will be automatically saved. The default mode is MonoListExclusive, which means that the Transform component, any MonoBehavior scripts plus the component Type names specified in the componentTypesToSave list will be saved. Note that non-MonoBehavior components need to have a PropertySelector defined (see section 4). A short overview of the available ComponentSaveModes:<br>
+<br>
+All: All components will be saved<br>
+<br>
+None: No components wil be saved<br>
+<br>
+Mono: Only MonoBehaviors and Transforms.<br>
+<br>
+MonoListInclusive: Only MonoBehaviors, Transforms and those components whose Type names are included in the list.<br>
+<br>
+ListInclusive: Only those components whose Type names are included in the list (for example "Transform", "MyMonoScript").<br>
+<br>
+ListExclusive: Only those components whose Type names are NOT included in the list (for example "Transform", "MyMonoScript").<br>
+<br>
+
+</p>
+<font size="4"><strong>9. Limitations & Known Issues</strong></font><br>
+<br>
+Some operations might lead to errors or unwanted behavior, and some features were not included because it would have required a complete code rewrite, or because it would have made things so complicated that the initial reason for USLU to come into existence, which is to teach beginners about saving and loading games, would have been led ad absurdum.<br>
+<br>
+You can't have directly nested collections. For example, List<List<int>> won't work. However, a List<MyClass> would work even if MyClass contains a List field.<br>
+As explained above, USLU doesn't support multi-dimensional arrays.<br>
+<br>
+Some Unity-specific classes like GUISkin will throw errors no matter what, so you should exclude those fields or write an ISerializationSurrogate for them (you can leave the ISS empty if you want. No data wil be saved but no eror will occur either).
+</p>
+<br>
+<font size="4"><strong>10. Troubleshooting</strong></font><br>
+<br>
+If anything goes wrong, the first thing you need to do is find out which kind of field caused the error. If the variable is not really needed, then consider adding a [DontSaveMember] attribute the it's field. For more thorough investigations, you can use the SaveLoadUtility.debugController to give you detailed information about how fields are converted. Remember that ISerializationSurrogates need to have their Types included in the SaveLoadUtility.surrogates list,and that non-MonoBehavior components need a PropertySelector defined in SaveLoadUtility.propertySelectors.
+</p>
+<br>
+<br>
+<br>
+
+</body>
+</HTML>

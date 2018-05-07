@@ -14,7 +14,7 @@ public class CameraController : MonoBehaviour {
     private Vector3 minBounds;
     private Vector3 maxBounds;
 
-    private Camera theCamera;
+    public Camera theCamera;
     private float halfHeight; // Unity calculates the vertical camera size divided by 2, not the full size
     private float halfWidth;
 

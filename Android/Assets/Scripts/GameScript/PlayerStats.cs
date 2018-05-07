@@ -2,6 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.IO;
 
 /**
  * Levelling up class 
@@ -135,4 +138,35 @@ public class PlayerStats : MonoBehaviour {
         //clone.transform.position = new Vector2(thePC.transform.position.x, thePC.transform.position.y);
 
     }
+
+    // For SAVE AND LOAD
+    //public void Save()
+    //{
+    //    BinaryFormatter bf = new BinaryFormatter(); // Turn file into binary
+    //    FileStream file = File.Create(Application.persistentDataPath + "/playerInfo.dat"); // Create file
+
+    //    PlayerData data = new PlayerData();
+    //    data.currentHp = currentHp;
+    //    data.currentAttack = currentAttack;
+    //    data.currentDefense = currentDefense;
+
+    //    bf.Serialize(file, data);
+    //    file.Close();
+    //}
+
+    //public void Load()
+    //{
+    //    if (File.Exists(Application.persistentDataPath + "/playerInfo.dat"))
+    //    {
+    //        BinaryFormatter bf = new BinaryFormatter(); // Turn file into binary so people can't modify it
+    //        FileStream file = File.Open(Application.persistentDataPath + "/playerInfo.dat", FileMode.Open); // Make the file
+    //        PlayerData data = (PlayerData)bf.Deserialize(file); // Uses playerData class below
+    //        file.Close();
+
+    //        currentAttack = data.currentAttack; // When loading, set currentAttack into the serializable attribute
+    //        currentHp = data.currentHp;
+    //        currentDefense = data.currentDefense;
+    //    }
+    //}
 }
+
