@@ -345,12 +345,12 @@ Prefab:
     - target: {fileID: 224419753579612210, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224419753579612210, guid: e6efd35d1fc779a479c5c23d6c9fad7e,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4369453353344518, guid: e6efd35d1fc779a479c5c23d6c9fad7e, type: 2}
       propertyPath: m_RootOrder
@@ -559,6 +559,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 1808092954}
+  - component: {fileID: 1808092955}
   - component: {fileID: 1808092953}
   m_Layer: 0
   m_Name: NewMusic
@@ -567,18 +568,31 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1808092953
-MonoBehaviour:
+--- !u!61 &1808092953
+BoxCollider2D:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1808092952}
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 39cabfe63d2ec40a1a73a5bc5e5d79ee, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  newTrack: {fileID: 8300000, guid: 1cec2e960b6784c9dbef2f779dd8b4c2, type: 3}
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0, y: 0}
+    oldSize: {x: 0, y: 0}
+    newSize: {x: 0, y: 0}
+    adaptiveTilingThreshold: 0
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 20, y: 1}
+  m_EdgeRadius: 0
 --- !u!4 &1808092954
 Transform:
   m_ObjectHideFlags: 0
@@ -586,9 +600,21 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1808092952}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2388.092, y: 1615.4005, z: -0.17912096}
+  m_LocalPosition: {x: -0.18, y: 14.14, z: -0.17912096}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1808092955
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1808092952}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0945030d586714e6bb14562b67b0291e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  newTrack: {fileID: 8300000, guid: 1cec2e960b6784c9dbef2f779dd8b4c2, type: 3}
