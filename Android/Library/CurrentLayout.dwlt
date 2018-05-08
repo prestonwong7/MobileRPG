@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 521}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1280
     height: 755
-  m_MinSize: {x: 950, y: 521}
+  m_MinSize: {x: 950, y: 542}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -106,10 +106,10 @@ MonoBehaviour:
     y: 30
     width: 1280
     height: 705
-  m_MinSize: {x: 681, y: 471}
-  m_MaxSize: {x: 14000, y: 14021}
+  m_MinSize: {x: 681, y: 492}
+  m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 468
+  controlID: 7414
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -130,10 +130,10 @@ MonoBehaviour:
     y: 0
     width: 1003
     height: 705
-  m_MinSize: {x: 406, y: 471}
-  m_MaxSize: {x: 10000, y: 14021}
+  m_MinSize: {x: 404, y: 492}
+  m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 469
+  controlID: 7415
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -154,10 +154,10 @@ MonoBehaviour:
     y: 0
     width: 1003
     height: 385
-  m_MinSize: {x: 406, y: 221}
-  m_MaxSize: {x: 8006, y: 4021}
+  m_MinSize: {x: 404, y: 221}
+  m_MaxSize: {x: 8004, y: 4021}
   vertical: 0
-  controlID: 470
+  controlID: 7416
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,9 +368,9 @@ MonoBehaviour:
   m_PersistentViewDataDictionary: {fileID: 0}
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: bc390000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: f6ebffffb4f4ffff9efbffff00000000
+    m_ExpandedIDs: ea62fcffdc68fcff8478fcffaa86fcffee89fcff7c8ffcffeaa5fcffe2d0fcff0cd4fcff94f8fcffe0fcfcffa8fffcfffe3ffdff2c43fdffb057fdfff090fdff329cfdffc0a5fdff86abfdff7ac6fdff64d6fdffb8d8fdff7ae2fdffccebfdffa8edfdff1009feff5844feff4249feff7c4dfeff8a58feff4e64feff6076feff98aafeff02aefeff46c4feff7ee9feffdae9feff02fafeff7c37ffff7c3effff96fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -421,14 +421,14 @@ MonoBehaviour:
     height: 364
   m_PersistentViewDataDictionary: {fileID: 0}
   m_SceneLighting: 1
-  lastFramingTime: 1706.1151176873452
+  lastFramingTime: 6518.83503305912
   m_2DMode: 1
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 16.003506, y: -2.361301, z: 0.15429688}
+    m_Target: {x: -2.04, y: -10.51, z: 0.15820312}
     speed: 2
-    m_Value: {x: 16.003506, y: -2.361301, z: 0.15429688}
+    m_Value: {x: -2.04, y: -10.51, z: 0.15820312}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -592,19 +592,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Art
+    - Assets/Scenes/GameScenes
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Art
+  - Assets/Scenes/GameScenes
   m_LastFoldersGridSize: -1
   m_LastProjectPath: /Users/KenLe/Documents/CSULB/Spring2018/CECS343/TestGit/MobileRPG/Android
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 95}
-    m_SelectedIDs: e42a0000
-    m_LastClickedID: 10980
-    m_ExpandedIDs: 00000000aa2800006a2900004c390000ce3a0000be3b0000c83b0000363c00008a41000000ca9a3bffffff7f
+    m_SelectedIDs: d23a0000
+    m_LastClickedID: 15058
+    m_ExpandedIDs: 00000000c22800008229000064390000e63a0000d63b0000e03b00004e3c0000a041000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -632,7 +632,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000aa2800006a2900004c390000ce3a0000be3b0000c83b0000363c00008a41000000ca9a3bffffff7f
+    m_ExpandedIDs: 00000000c22800008229000064390000e63a0000d63b0000e03b00004e3c0000a041000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -659,7 +659,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c623000000000000c43d0000863800007c6800000c3900001c3f000056590000c42efcff5a12fdffb43a000066360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0

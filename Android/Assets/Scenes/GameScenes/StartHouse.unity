@@ -1125,6 +1125,11 @@ Prefab:
       propertyPath: spreadCustomCurve.m_RotationOrder
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 82062440037946652, guid: 6e218fe157ec44a89adfc1c552246582,
+        type: 2}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6e218fe157ec44a89adfc1c552246582, type: 2}
   m_IsPrefabParent: 0
@@ -2811,8 +2816,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6189d3d78a87c864b93d0db70d951d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadArea: Forest Map
-  exitPoint: ForestMapEntrance
+  loadArea: Castle
+  exitPoint: CastleEntrance
 --- !u!61 &999813558
 BoxCollider2D:
   m_ObjectHideFlags: 0
