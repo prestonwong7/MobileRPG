@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   cacheType: 2
-  lastUpdatedAtString: 2018-05-09T00:00:15.0969510-07:00
+  lastUpdatedAtString: 2018-05-09T00:05:10.4689800-07:00
   initializedAtString: 2018-05-09T00:00:15.0969510-07:00
   localBranches:
   - name: Ken
@@ -29,6 +29,18 @@ MonoBehaviour:
     tracking: '[None]'
     isActive: 0
   - name: origin/Ken
+    tracking: '[None]'
+    isActive: 0
+  - name: origin/eli
+    tracking: '[None]'
+    isActive: 0
+  - name: origin/joystick
+    tracking: '[None]'
+    isActive: 0
+  - name: origin/master
+    tracking: '[None]'
+    isActive: 0
+  - name: origin/newjoystick
     tracking: '[None]'
     isActive: 0
   - name: origin/preston
@@ -67,6 +79,10 @@ MonoBehaviour:
     - Values:
       - HEAD
       - Ken
+      - eli
+      - joystick
+      - master
+      - newjoystick
       - preston
     subKeyValues:
     - Values:
@@ -75,6 +91,22 @@ MonoBehaviour:
           name: origin
           url: https://github.com/prestonwong7/MobileRPG.git
       - name: Ken
+        remote:
+          name: origin
+          url: https://github.com/prestonwong7/MobileRPG.git
+      - name: eli
+        remote:
+          name: origin
+          url: https://github.com/prestonwong7/MobileRPG.git
+      - name: joystick
+        remote:
+          name: origin
+          url: https://github.com/prestonwong7/MobileRPG.git
+      - name: master
+        remote:
+          name: origin
+          url: https://github.com/prestonwong7/MobileRPG.git
+      - name: newjoystick
         remote:
           name: origin
           url: https://github.com/prestonwong7/MobileRPG.git

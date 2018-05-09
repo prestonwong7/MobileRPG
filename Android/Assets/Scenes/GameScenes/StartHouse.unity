@@ -620,22 +620,22 @@ Prefab:
     - target: {fileID: 224166774155289834, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224166774155289834, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380186451157878, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 224380186451157878, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114438623590574194, guid: 434e9b7280196f4479a26c692352fce3,
         type: 2}
@@ -2816,8 +2816,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6189d3d78a87c864b93d0db70d951d98, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  loadArea: Castle2
-  exitPoint: Castle2StartPoint
+  loadArea: Castle
+  exitPoint: CastleEntrance
 --- !u!61 &999813558
 BoxCollider2D:
   m_ObjectHideFlags: 0
