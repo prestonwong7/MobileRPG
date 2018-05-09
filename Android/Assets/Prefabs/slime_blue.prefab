@@ -215,8 +215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  timeBetweenMove: 1
-  timeToMove: 2
+  timeBetweenMove: 0.5
+  timeToMove: 3
   respawnTime: 0
 --- !u!114 &114350969392776336
 MonoBehaviour:
@@ -352,9 +352,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35c8d3e7968ae654296b432b2cea1461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMaxHealth: 40
-  enemyCurrentHealth: 40
-  enemyExp: 20
+  enemyMaxHealth: 60
+  enemyCurrentHealth: 60
+  enemyExp: 30
   enemyQuestName: Water Slime
   bossFightEndScene: 0
   sceneNameToSwitch: 
