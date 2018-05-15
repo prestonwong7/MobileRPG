@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 199685194024867024}
   - component: {fileID: 114550095296217742}
   - component: {fileID: 82201931652849680}
+  - component: {fileID: 114687663878727294}
   m_Layer: 0
   m_Name: DamageParticle
   m_TagString: Untagged
@@ -135,6 +136,23 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   timeToDestroy: 0.5
+--- !u!114 &114687663878727294
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1896007512154378}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabName: DamageParticle
+  id: 
+  idParent: 
+  dontSave: 0
+  componentSaveMode: 3
+  componentTypesToSave: []
 --- !u!198 &198957472530562194
 ParticleSystem:
   m_ObjectHideFlags: 1

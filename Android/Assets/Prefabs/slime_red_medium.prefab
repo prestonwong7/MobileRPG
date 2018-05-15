@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 50840348847193742}
   - component: {fileID: 114632159942638742}
   - component: {fileID: 114801516784871594}
+  - component: {fileID: 114323237953802094}
   m_Layer: 0
   m_Name: slime_red_medium
   m_TagString: Enemy
@@ -226,6 +227,23 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
+--- !u!114 &114323237953802094
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1525551663757456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabName: slime_red_medium
+  id: 
+  idParent: 
+  dontSave: 0
+  componentSaveMode: 3
+  componentTypesToSave: []
 --- !u!114 &114375091911975710
 MonoBehaviour:
   m_ObjectHideFlags: 1

@@ -52,15 +52,15 @@ public class QuestObject : MonoBehaviour
                 enemyKillCount++;
 
             }
-
             if (enemyKillCount >= enemiesToKill)
             {
+                enemyKillCount = 0;
                 EndQuest();
-                
+
                 {
-                if (joybutton.pressed && theDialogueManager.dialogueActive)
-                    
-                    gameObject.SetActive(false);
+                    if ((Input.GetKeyUp(KeyCode.Space) || (Input.GetKeyUp(KeyCode.Z)) || joybutton.pressed))
+
+                        gameObject.SetActive(false);
                 }
             }
             // for UI
@@ -74,7 +74,7 @@ public class QuestObject : MonoBehaviour
         //        StartQuest();
         //    }
         //}
-        
+
 
     }
 
@@ -90,7 +90,7 @@ public class QuestObject : MonoBehaviour
         thePlayerStats.AddExp(questExp);
         theQuestManager.ShowQuestText(endText);
         theQuestManager.questCompleted[questNumber] = true;
-        
+
 
     }
 }

@@ -276,7 +276,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!61 &398543911
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -316,6 +316,7 @@ MonoBehaviour:
   questNumber: 0
   startQuest: 0
   endQuest: 1
+  triggerQuestAfterCompletion: 0
 --- !u!4 &398543913
 Transform:
   m_ObjectHideFlags: 0
@@ -495,6 +496,7 @@ MonoBehaviour:
   questNumber: 0
   startQuest: 1
   endQuest: 0
+  triggerQuestAfterCompletion: 0
 --- !u!4 &928666128
 Transform:
   m_ObjectHideFlags: 0
@@ -524,7 +526,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &962576220
 MonoBehaviour:
   m_ObjectHideFlags: 0

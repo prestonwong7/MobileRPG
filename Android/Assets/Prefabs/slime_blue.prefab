@@ -93,6 +93,7 @@ GameObject:
   - component: {fileID: 114135292859233814}
   - component: {fileID: 95053866250378104}
   - component: {fileID: 50527382101242998}
+  - component: {fileID: 114714343562305606}
   m_Layer: 0
   m_Name: slime_blue
   m_TagString: Enemy
@@ -214,8 +215,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 3
-  timeBetweenMove: 1
-  timeToMove: 2
+  timeBetweenMove: 0.5
+  timeToMove: 3
   respawnTime: 0
 --- !u!114 &114350969392776336
 MonoBehaviour:
@@ -351,9 +352,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35c8d3e7968ae654296b432b2cea1461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMaxHealth: 40
-  enemyCurrentHealth: 40
-  enemyExp: 20
+  enemyMaxHealth: 60
+  enemyCurrentHealth: 60
+  enemyExp: 30
   enemyQuestName: Water Slime
   bossFightEndScene: 0
   sceneNameToSwitch: 
@@ -373,6 +374,23 @@ MonoBehaviour:
   damageNumber: {fileID: 1240555612480300, guid: 435e7a7c5bb6ffc47aa056ccf9a1a73e,
     type: 2}
   ignoreOtherBoxCollider: 0
+--- !u!114 &114714343562305606
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1861327939562126}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c19f3e134862e74dbc98cb514a82ef5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefabName: slime_blue
+  id: 
+  idParent: 
+  dontSave: 0
+  componentSaveMode: 3
+  componentTypesToSave: []
 --- !u!114 &114839817492406070
 MonoBehaviour:
   m_ObjectHideFlags: 1

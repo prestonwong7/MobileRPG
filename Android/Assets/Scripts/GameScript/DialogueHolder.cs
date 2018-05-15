@@ -66,7 +66,7 @@ public class DialogueHolder : MonoBehaviour
      */
     private void OnTriggerStay2D(Collider2D other)
     {
-        if (other.gameObject.name == "Player1")
+        if (other.gameObject.tag == "Player")
         {
             if ((Input.GetKeyUp(KeyCode.Z) || joybutton.pressed)) // joybutton.pressed
             {
@@ -112,7 +112,7 @@ public class DialogueHolder : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Player1" && trigger == thePlayer.triggerOnceCounter)
+        if (other.gameObject.tag == "Player" && trigger == thePlayer.triggerOnceCounter)
         {
             if (triggerOnce)
             {

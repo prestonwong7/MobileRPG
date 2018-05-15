@@ -38,7 +38,7 @@ public class QuestTrigger : MonoBehaviour {
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.gameObject.name == "Player1") // If the box collider touches "Player1"
+        if (other.gameObject.tag == "Player") // If the box collider touches "Player1"
         {
             if (!theQuestManager.questCompleted[questNumber]) // If the current quest is not completed, so quest DOES NOT REPEAT
             {

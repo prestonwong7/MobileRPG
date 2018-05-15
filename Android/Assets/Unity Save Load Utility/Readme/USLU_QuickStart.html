@@ -1,0 +1,24 @@
+<HTML>
+<head>
+<Title>Unity Save Load Utility Manual</Title>
+</head>
+<body>
+<p><font size="6"><strong>Unity Save Load Utility (USLU)</strong></font><br>
+<font size="5">(formerly SerializeHelper)</font></p>
+<br>
+<p>
+<font size="4"><strong>Quick-Start Guide</strong></font><br>
+<br>
+1. Add The SaveLoadUtility and PersistenceMarker components to any GameObject in the scene. Don't add an ObjectIdentifer component to this GameObject.<br>
+2. Set the saveGamePath of SaveLoadUtility, or set usePersistentDataPath to true.<br>
+3. Add ObjectIdentifier components to all prefabs whose clones should be able to be saved and loaded.<br>
+4. Make sure all GameObjects in the scene which should be saved have the ObjectIdentifier component.<br>
+5. Set the prefabName variable of the ObjectIdentifier components to the GameObject's prefab's name.<br>
+6. Use the OnSave and OnLoad function (add them to your own scripts) to do stuff before saving and after loading. Use SaveLoad.objectIdentifierDict to access all ObjectIdentifier components in the scene at the time of saving, or those loaded after loading a game. The key is their id.<br>
+7. Press the Escape key to open the menu, or press F5 and F9 for quick save and quick load.<br>
+8. If any errors occur, check the manual to find out how to exclude certain fields from being saved, which is the easiest way to avoid erros with non-critical data.<br>
+</p>
+
+</p>
+</body>
+</HTML>

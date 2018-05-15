@@ -526,10 +526,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35c8d3e7968ae654296b432b2cea1461, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  enemyMaxHealth: 250
-  enemyCurrentHealth: 250
+  enemyMaxHealth: 500
+  enemyCurrentHealth: 500
   enemyExp: 100
-  enemyQuestName: Red Slime Boss
+  enemyQuestName: Green Slime Boss
   bossFightEndScene: 1
   sceneNameToSwitch: Ken's Map
   exitPoint: SlimeBossExit
@@ -545,7 +545,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8571535deacd21b4882ee6d7d07d0d5d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  damage: 25
+  damage: 30
   damageNumber: {fileID: 1240555612480300, guid: 435e7a7c5bb6ffc47aa056ccf9a1a73e,
     type: 2}
   ignoreOtherBoxCollider: 0
