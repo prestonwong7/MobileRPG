@@ -21,7 +21,7 @@ public class SwtichAudioTrigger : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.name == "Player1")
+        if(other.gameObject.tag == "Player")
         {
             if(newTrack != null)
             {

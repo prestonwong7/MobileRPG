@@ -29,4 +29,12 @@ public class SFXManager : MonoBehaviour {
 	void Update () {
 		
 	}
+
+    public void mute()
+    {
+        playerHurt.mute = !playerHurt.mute;
+        playerDead.mute = !playerDead.mute;
+        playerAttack.mute = !playerAttack.mute;
+        playerLevelUp.mute = !playerLevelUp.mute;
+    }
 }

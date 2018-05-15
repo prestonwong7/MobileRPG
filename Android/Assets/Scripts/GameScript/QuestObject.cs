@@ -58,7 +58,7 @@ public class QuestObject : MonoBehaviour
                 EndQuest();
 
                 {
-                    if ((Input.GetKeyUp(KeyCode.Space) || joybutton.pressed))
+                    if ((Input.GetKeyUp(KeyCode.Space) || (Input.GetKeyUp(KeyCode.Z)) || joybutton.pressed))
 
                         gameObject.SetActive(false);
                 }
