@@ -316,6 +316,9 @@ MonoBehaviour:
   playerMaxHealth: 50
   playerCurrentHealth: 50
   flashLength: 0.3
+  dead: 0
+  respawnTime: 0
+  respawnTimeCounter: 0
 --- !u!114 &114441346015553802
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -347,8 +350,13 @@ MonoBehaviour:
   moveSpeed: 15
   diagnoalMoveModifier: 0.75
   attackTime: 0.1
+  dead: 0
+  deadCheck: 0
+  respawnTime: 0
+  respawnTimeCounter: 0
   startPoint: 
   canMove: 0
+  triggerOnceCounter: 0
 --- !u!212 &212533585881706474
 SpriteRenderer:
   m_ObjectHideFlags: 1

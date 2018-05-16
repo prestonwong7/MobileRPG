@@ -12,20 +12,25 @@ public class changeObject : MonoBehaviour {
 	void Start () {
         male.SetActive(true);
         female.SetActive(false);
+        myDropdown = FindObjectOfType<Dropdown>();
 	}
 	
 	// Update is called once per frame
-	void Update (Dropdown target) {
+	void Update () {
         
-		if(target.value == 0)
+		if(myDropdown.value == 0)
         {
             male.SetActive(true);
             female.SetActive(false);
+            DontDestroyOnLoad(male);
+            Debug.Log("Male working");
         }
-        if(target.value == 1)
+        if(myDropdown.value == 1)
         {
             male.SetActive(false);
             female.SetActive(true);
+            DontDestroyOnLoad(female);
+            Debug.Log("female working");
         }
 	}
 }

@@ -57,10 +57,10 @@ public class PlayerController : MonoBehaviour
             playerExists = true;
             DontDestroyOnLoad(transform.gameObject); // Won't destroy player when switching scenes
         }
-        else
-        {
-            Destroy(gameObject);
-        }
+        //else
+        //{
+        //    Destroy(gameObject);
+        //}
 
         canMove = true;
 
