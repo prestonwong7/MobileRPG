@@ -21,8 +21,7 @@
 - Settings - Finished
 - Plot
 
-![Mobile RPG](header.png)
-![Screenshot 1](https://imgur.com/a/8r6dcdW "Screenshot 1")
+![Screenshot 1](https://imgur.com/a/8r6dcdW)
 
 ## Installation
 
