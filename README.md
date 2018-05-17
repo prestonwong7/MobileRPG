@@ -6,23 +6,23 @@
 
 
 ## Work - in - Progress
-- Combat system
 - Enemies Sprite
 - Character Sprite
-- Menu Screen
-- More submaps (maps inside the base map)
-- Fixing boundary + camera control
-- HP system for player and enemy
-- Player Stats
-- Level up system
-- Creating quests
-- Dialogue system
-- Android movement movepad
-- Music
-- Settings
+- Saving
+- More submaps (maps inside the base map) - Finished
+- Fixing boundary + camera control - Finished
+- HP system for player and enemy - Finished
+- Player Stats - Finished
+- Level up system - Finished
+- Creating quests - Finished
+- Dialogue system - Finished
+- Android movement movepad - Finished
+- Music - Finished
+- Settings - Finished
 - Plot
 
 ![Mobile RPG](header.png)
+![Screenshot 1](https://imgur.com/a/8r6dcdW "Screenshot 1")
 
 ## Installation
 
