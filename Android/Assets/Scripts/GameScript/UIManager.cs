@@ -16,6 +16,10 @@ public class UIManager : MonoBehaviour
     public Slider expBar;
     public Text expText;
 
+    public Text PlayerStatsHpText;
+    public Text PlayerStatsAttackText;
+    public Text PlayerStatsDefenseText;
+
 
     //public PlayerStats playerCurrentExp;
 
@@ -64,6 +68,11 @@ public class UIManager : MonoBehaviour
         expBar.maxValue = thePlayerStat.maxExp;
         expBar.value = thePlayerStat.currentExp;
         expText.text = "EXP: " + thePlayerStat.currentExp + "/" + thePlayerStat.maxExp;
+
+        PlayerStatsHpText.text = "Max HP: " + playerHealth.playerMaxHealth;
+        PlayerStatsAttackText.text = "Attack: " + (thePlayerStat.currentAttack + 5);
+        PlayerStatsDefenseText.text = "Defense: " + thePlayerStat.currentDefense;
+        
 
         //if (theQO.isEnemyQuest) {
         //    questText.text = questName + ": " + theQO.enemyKillCount + "/" + theQO.enemiesToKill;
