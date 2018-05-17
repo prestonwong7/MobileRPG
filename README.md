@@ -22,6 +22,8 @@
 - Plot
 
 ![Screenshot 1](https://imgur.com/a/8r6dcdW)
+![Screenshot2](https://imgur.com/a/YQNyjx7)
+![Screenshot3](https://imgur.com/a/sL1Nk1N)
 
 ## Installation
 
