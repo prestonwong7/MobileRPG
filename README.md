@@ -14,7 +14,7 @@
 - HP system for player and enemy - Finished
 - Player Stats - Finished
 - Level up system - Finished
-- Creating quests - Finished
+- Creating quests - Finished - Need to make boss quest
 - Dialogue system - Finished
 - Android movement movepad - Finished
 - Music - Finished
@@ -23,7 +23,7 @@
 
 ![Screenshot 1](https://user-images.githubusercontent.com/30359951/40204295-e2ac9894-59dc-11e8-9954-82e8d3864504.png)
 ![Screenshot2](https://user-images.githubusercontent.com/30359951/40204373-28400daa-59dd-11e8-82e2-aee75cd90aff.png)
-![Screenshot3](https://user-images.githubusercontent.com/30359951/40204430-4cfe136c-59dd-11e8-8e24-713251d8f198.png)
+![Screenshot3](https://user-images.githubusercontent.com/30359951/40222572-cd4c158a-5a34-11e8-93e2-b317dfbec904.png)
 
 ## Installation
 
@@ -46,7 +46,8 @@ Our team realized that a 2D Mobile RPG game wasn't common in today's era. So, we
 
 
 ## Release History
-
+* 0.2.2
+    * Relased into iOS, slightly buggy!
 * 0.2.1
     * Relased into Android!
     * CHANGE: Map updated
@@ -64,6 +65,6 @@ Our team realized that a 2D Mobile RPG game wasn't common in today's era. So, we
 - Daniel Estrada -
 - Eli Ramos - 
 
-***This game uses music from Zelda, Your Lie In April, and Boku no Hero Academia***
+***This game uses music from Zelda, Your Lie In April, Boku no Hero Academia, and Naruto***
 
 
