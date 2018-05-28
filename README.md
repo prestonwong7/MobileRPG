@@ -1,5 +1,5 @@
 # MobileRPG
-> This is a 2D Mobile RPG game created using Unity. It was made by five developers. 
+> Mobile RPG is a game created by five developers using Unity 2D that can be used on Android, iOS, and PC. It uses ground sprites called Roguelike/RPG pack created by Kenney. We followed a tutorial on Youtube called GamesPlusJames, which allowed us to make a realistic 2D RPG game. In Mobile RPG, you are a prince who will be going through an intense plot of saving your dad from evil slimes! Grow stronger as you level up, gaining more hp, attack damage, and more! 
 [![NPM Version][npm-image]][npm-url]
 [![Build Status][travis-image]][travis-url]
 [![Downloads Stats][npm-downloads]][npm-url]
@@ -60,11 +60,11 @@ Our team realized that a 2D Mobile RPG game wasn't common in today's era. So, we
 ## Contributors
 
 - Preston Wong – [My Website](https://prestonwong7.github.io) – prestonwong7@gmail.com
-- Peter Kim -
-- Ken Le -
-- Daniel Estrada -
-- Eli Ramos - 
+- [Peter Kim](https://github.com/peterkim0226) 
+- [Ken Le](https://github.com/kenle123)
+- [Daniel Estrada](https://github.com/DanielEstrada1)
+- [Eli Ramos](https://github.com/elijahramos)
 
-***This game uses music from Zelda, Your Lie In April, Boku no Hero Academia, and Naruto***
+***This game uses music from Zelda, Your Lie In April, Boku no Hero Academia, Naruto, and more***
 
 
