@@ -1,8 +1,5 @@
 # MobileRPG
 > Mobile RPG is a game created by five developers using Unity 2D that can be used on Android, iOS, and PC. It uses ground sprites called Roguelike/RPG pack created by Kenney. We followed a tutorial on Youtube called GamesPlusJames, which allowed us to make a realistic 2D RPG game. In Mobile RPG, you are a prince who will be going through an intense plot of saving your dad from evil slimes! Grow stronger as you level up, gaining more hp, attack damage, and more! 
-[![NPM Version][npm-image]][npm-url]
-[![Build Status][travis-image]][travis-url]
-[![Downloads Stats][npm-downloads]][npm-url]
 
 
 ## Work - in - Progress
