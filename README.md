@@ -1,5 +1,5 @@
 # MobileRPG
-> Mobile RPG is a game created by five developers using Unity 2D that can be used on Android, iOS, and PC. It uses ground sprites called Roguelike/RPG pack created by Kenney. We followed a tutorial on Youtube called GamesPlusJames, which allowed us to make a realistic 2D RPG game. In Mobile RPG, you are a prince who will be going through an intense plot of saving your dad from evil slimes! Grow stronger as you level up, gaining more hp, attack damage, and more! 
+> Mobile RPG is a game created by five developers using Unity 2D that can be used on Android, iOS, and PC. It uses ground sprites called Roguelike/RPG pack created by Kenney. We followed a tutorial on Youtube called GamesPlusJames, which allowed us to make a realistic 2D RPG game. However, making it compatible on the iOS and Android was completely our task. In Mobile RPG, you are a prince who will be going through an intense plot of saving your dad from evil slimes! Grow stronger as you level up, gaining more hp, attack damage, and more! 
 
 
 ## Work - in - Progress
@@ -56,11 +56,11 @@ Our team realized that a 2D Mobile RPG game wasn't common in today's era. So, we
 
 ## Contributors
 
-- Preston Wong – [My Website](https://prestonwong7.github.io) – prestonwong7@gmail.com
-- [Peter Kim](https://github.com/peterkim0226) 
-- [Ken Le](https://github.com/kenle123)
-- [Daniel Estrada](https://github.com/DanielEstrada1)
-- [Eli Ramos](https://github.com/elijahramos)
+- Preston Wong – [My Website](https://prestonwong7.github.io) – prestonwong7@gmail.com - Main developer, wrote and debugged most of the code of MobileRPG, designed some of the maps
+- [Peter Kim](https://github.com/peterkim0226) - Made it compatabile on iOS and Android and debugging
+- [Ken Le](https://github.com/kenle123) - Creating beautiful tiled maps and music selection
+- [Daniel Estrada](https://github.com/DanielEstrada1) - Created main menu and made settings functional
+- [Eli Ramos](https://github.com/elijahramos) - Created main menu and made settings functional 
 
 ***This game uses music from Zelda, Your Lie In April, Boku no Hero Academia, Naruto, and more***
 
