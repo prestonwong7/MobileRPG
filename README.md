@@ -38,12 +38,25 @@ Windows:
 ```sh
 1. Pull all of the files
 2. Run the project through Unity.
-3. Make sure all build settings are set up correctly.
+3. Make sure to check build settings to Android and all scenes are checked.
 4. Connect Android phone*.
 4. Build into Android phone with the .apk file.
 5. Run on Android.
 
 * Make sure Android phone allows Unknown Sources.
+```
+
+Mac:
+
+```sh
+1. Pull all of the files to a folder
+2. Run the project through Unity.
+3. Make sure to check build settings as iOS and all scenes are checked.
+4. Connect Iphone phone*.
+4. Build into Iphone phone through Xcode.
+5. Run on Iphone.
+
+* Need Mac computer + Xcode (Apple Account).
 ```
 
 ## Mission
