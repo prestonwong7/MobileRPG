@@ -3,9 +3,9 @@
 
 
 ## Work - in - Progress
-- Enemies Sprite
-- Character Sprite
-- Saving
+- Enemies Sprite - Finish
+- Character Sprite - Finish
+- Saving - INCOMPLETE
 - More submaps (maps inside the base map) - Finished
 - Fixing boundary + camera control - Finished
 - HP system for player and enemy - Finished
@@ -16,7 +16,8 @@
 - Android movement movepad - Finished
 - Music - Finished
 - Settings - Finished
-- Plot
+- Plot - INCOMPLETE
+- Credit Scene - INCOMPLETE
 
 ![Screenshot 1](https://user-images.githubusercontent.com/30359951/40204295-e2ac9894-59dc-11e8-9954-82e8d3864504.png)
 ![Screenshot2](https://user-images.githubusercontent.com/30359951/40204373-28400daa-59dd-11e8-82e2-aee75cd90aff.png)
