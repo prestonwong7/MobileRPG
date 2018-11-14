@@ -19,10 +19,16 @@
 - Plot - INCOMPLETE
 - Credit Scene - INCOMPLETE
 
+## Main Menu ##
+![MainMenu](https://user-images.githubusercontent.com/30359951/48515419-7f26b300-e815-11e8-89f1-2e5ae69f96cf.png)
+![Menu](https://user-images.githubusercontent.com/30359951/48515472-a7aead00-e815-11e8-8579-8f494e2f7bd1.png)
+![Menu1](https://user-images.githubusercontent.com/30359951/48515247-193a2b80-e815-11e8-854c-7d3439786674.png)
+
+## Gameplay ##
 ![Screenshot 1](https://user-images.githubusercontent.com/30359951/40204295-e2ac9894-59dc-11e8-9954-82e8d3864504.png)
 ![Screenshot2](https://user-images.githubusercontent.com/30359951/40204373-28400daa-59dd-11e8-82e2-aee75cd90aff.png)
 ![Screenshot3](https://user-images.githubusercontent.com/30359951/40222572-cd4c158a-5a34-11e8-93e2-b317dfbec904.png)
-![Screenshot4](https://user-images.githubusercontent.com/30359951/48515247-193a2b80-e815-11e8-854c-7d3439786674.png)
+![BossBattle](https://user-images.githubusercontent.com/30359951/48515360-59011300-e815-11e8-9206-7fdd65ca0693.png)
 
 
 ## Installation
